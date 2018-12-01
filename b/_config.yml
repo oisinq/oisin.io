@@ -1,0 +1,33 @@
+# Permalinks
+permalink:           pretty
+
+# Setup
+title:               Oisin's Blog
+tagline:             dev, etc
+url:                 https://twitter.com/oisin1001
+paginate:            5
+baseurl:             ""
+excerpt_separator: <!--more-->
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+# About/contact
+author:
+  name:              Oisin Quinn
+  url:               https://twitter.com/oisin1001
+  email:             me@oisin.io
+
+# Custom vars
+version:             2.0.0
+github:
+  repo:              https://github.com/poole/poole
+
+# Gems
+gems:
+  - jekyll-paginate
+  - jekyll-gist
