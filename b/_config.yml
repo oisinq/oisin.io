@@ -6,7 +6,7 @@ title:               Oisin's Blog
 tagline:             dev, etc
 url:                 https://twitter.com/oisin1001
 paginate:            5
-baseurl:             "/b"
+baseurl:             ""
 excerpt_separator: <!--more-->
 
 # Assets
@@ -28,6 +28,6 @@ github:
   repo:              https://github.com/poole/poole
 
 # Gems
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-gist
