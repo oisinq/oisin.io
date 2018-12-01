@@ -6,7 +6,7 @@ title:               Oisin's Blog
 tagline:             dev, etc
 url:                 https://twitter.com/oisin1001
 paginate:            5
-baseurl:             ""
+baseurl:             "/b"
 excerpt_separator: <!--more-->
 
 # Assets
