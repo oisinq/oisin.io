@@ -5,7 +5,7 @@ date: 2018-08-25T18:10:35+00:00
 author: Oisin
 layout: post
 guid: https://oisin.io/b/?p=68
-permalink: /2018/08/25/music-project-update-3-routing-reading-from-json-and-archive-design/
+#permalink: /2018/08/25/music-project-update-3-routing-reading-from-json-and-archive-design/
 categories:
   - Uncategorised
 ---

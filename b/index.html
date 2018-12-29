@@ -1,39 +1,33 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+---
+layout: default
+title: Blog
+---
 
-    <title>Oisin Quinn</title>
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<div class="posts">
+  {% for post in paginator.posts %}
+  <article class="post">
+    <h1 class="post-title">
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
 
-    <!-- Custom styles for this template -->
-    <link href="main.css" rel="stylesheet">
-  </head>
+    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
 
-  <body class="text-center">
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    {{ post.content | strip_html | truncatewords: 50 }}
+  </article>
+  {% endfor %}
+</div>
 
-      <main role="main" class="inner cover mt-auto mb-auto">
-        <h1 class="cover-heading">Oisin Quinn</h1>
-        <h3>Software Engineer</h3>
-        <br>
-        <p class="lead">3rd Year Computer Science in University College Dublin</p>
-        <p class="lead">Studied Java, C and Python as well as Android/iOS</p>
-        <p class="lead">Producer &amp; host of <a href="https://mixcloud.com/quinntessentials" id="radio-link">Quinntessentials</a></p>
-          <p class="lead"><a href="https://oisin.io/b" id="radio-link">Blog</a></p>
-        <br>
-        <a href="https://github.com/oisinq"><i class="fab fa-github-square"></i></a>
-        <a href="mailto:me@oisin.io"><i class="fas fa-envelope-square"></i></a>
-        <a href="https://twitter.com/oisin1001"><i class="fab fa-twitter-square"></i></a>
-        <a href="https://linkedin.com/in/oisinq"><i class="fab fa-linkedin"></i></a>
-      </main>
-    </div>
-  </body>
-</html>
-
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>

@@ -5,7 +5,7 @@ date: 2018-08-20T00:37:22+00:00
 author: Oisin
 layout: post
 guid: https://oisin.io/b/?p=52
-permalink: /2018/08/20/music-project-update-2-i-wrote-some-code/
+#permalink: /2018/08/20/music-project-update-2-i-wrote-some-code/
 categories:
   - Uncategorised
 ---

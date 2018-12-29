@@ -1,11 +1,12 @@
 # Permalinks
-permalink:           pretty
+permalink:           b/:year/:month/:day/:title/
 
 # Setup
 title:               Oisin's Blog
 tagline:             dev, etc
 url:                 https://twitter.com/oisin1001
 paginate:            5
+paginate_path:       "b/page:num"
 baseurl:             ""
 excerpt_separator: <!--more-->
 

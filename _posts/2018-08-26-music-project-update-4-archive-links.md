@@ -5,7 +5,7 @@ date: 2018-08-26T02:34:17+00:00
 author: Oisin
 layout: post
 guid: https://oisin.io/b/?p=73
-permalink: /2018/08/26/music-project-update-4-archive-links/
+#permalink: /2018/08/26/music-project-update-4-archive-links/
 categories:
   - Uncategorised
 ---

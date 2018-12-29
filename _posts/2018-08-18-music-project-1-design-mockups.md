@@ -5,7 +5,7 @@ date: 2018-08-18T23:14:32+00:00
 author: Oisin
 layout: post
 guid: https://oisin.io/b/?p=33
-permalink: /2018/08/18/music-project-1-design-mockups/
+#permalink: /2018/08/18/music-project-1-design-mockups/
 categories:
   - Uncategorised
 ---
