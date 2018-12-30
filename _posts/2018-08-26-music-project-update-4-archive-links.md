@@ -17,11 +17,7 @@ To start with, I made up the Archive in HTML. I used a flexbox so it shows a spe
 
 As I mentioned in the last post, I mentioned how I was gonna use my experience in a past project to make the CardList component. What really shocked me about React was how easy it was to display an array of components. From my "tracks" object, I can use map() to create the card array really easily, and then I can just place that array into the JSX and React does all of the rest of the work for me! It means that a fairly complex part of my website can be written in only 17 lines of code.
 
-<div class="wp-block-coblocks-gist wp-block-coblocks-gist--no-meta">
-  <noscript>
-    <a href="https://gist.github.com/oisinq/9911de3906eeb6f16ffd1af80c6ff35b">View this gist on GitHub</a>
-  </noscript>
-</div>
+{% gist 9911de3906eeb6f16ffd1af80c6ff35b %}
 
 I don't think this is the finished product- I don't think this will work well as the number of tracks grows into the hundreds, so I need to find a way to make that better. I'm also using smaller versions of the main images to load things a bit quicker and not have multiple gradients. I think I'm going to drop the white border though.
 
