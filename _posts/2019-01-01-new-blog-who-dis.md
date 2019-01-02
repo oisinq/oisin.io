@@ -1,7 +1,6 @@
 ---
-id: 73
 title: 'New blog, who dis?'
-date: 2019-01-02T21:54:00+00:00
+date: 2019-01-01T21:54:00+00:00
 author: Oisin
 layout: post
 categories:
