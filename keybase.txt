@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/oisinq
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://oisin.io
+  * I am oisinq (https://keybase.io/oisinq) on keybase.
+  * I have a public key with fingerprint 5996 534B F647 2251 D910  F8B8 B845 6D1B 42E0 653D
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01016fd82fd8e7c2d8caf922f9b39e0c29e892b8aadad2dee894989645ee102eaa670a",
+      "fingerprint": "5996534bf6472251d910f8b8b8456d1b42e0653d",
+      "host": "keybase.io",
+      "key_id": "b8456d1b42e0653d",
+      "kid": "01016fd82fd8e7c2d8caf922f9b39e0c29e892b8aadad2dee894989645ee102eaa670a",
+      "uid": "1b86199e524e25394fb61c506462eb19",
+      "username": "oisinq"
+    },
+    "service": {
+      "hostname": "oisin.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1589663321,
+  "expire_in": 157680000,
+  "prev": "acfdc5b2985e96d0505522a8f4b3d5810c896888cdeef82d77d7cfa097865448",
+  "seqno": 4,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMIiAnicrVJbSBVBGD4ns9IKoyjqIZCNIEpsd87O7MyJICvFMEPJwiPhYXdn9rip
+u6ezeywTC4wgH7oZVlQPBYlSRNfThbCLSdFVsov2YNGdLkQ3wjrdZq2ghx6bYRj+
+f77vm+//+TtHpvjS/SlNrRdframs9l89vznuKz+3OFQnaDatFYJ1QiUbuFgVZY4b
+rjSpEBRESZSQQTHghyk6oFhXDQKAQbQAYaIOCMMEaFhVqUoBZTySCSZIhoxJImCq
+ihRRFbIEw7QiLBaNmZbLZSEhCAZkzUCyAgCUKJFEA2t8yxBRSZMBEzmAcmKF7XgM
+bk5THZZt2jzHg/CAvX/g/7Pv+ICcpGEkEcIgkBmAASIbGpJ0KCIZAaZJxAM6LGap
+1YyjbdMxrWVCfZbAczWmzry2enX8/f6rkmjMdm3druLZCteNOkGP5dZGPdhypoV/
+C4Q106K8g5xRw2KOaVtCUOJI3TU9RQly6ygQAFKWwFZEzRgLmx4CKgiLfHn/sBou
+qeoG1aEGCIaMICpCEUIAVGzIWoBCLIk6F8IY67wjBgZUUaiiG6pIFIygLGPBK2mZ
+ZQtBmdtUI1zSMSOW6sZjTKjvOLdksM+f7huSOsibLF962qg/8zardJhv14i2guuh
+H53xjozsBx19x++GinMb7apNyelwxtdd/eaBKaVxcitRmOgc+djclzkmp7yHTCtZ
+6tuZn7Zm//ATKz/ZSxrubWrTz2yYvCOUe77w9cu6sva+2a3ZpwqcyCP07Ym/auuc
+/hprVWP8wMmhpzvfZPQea00uKjOCL9IG+z+svR/sjeRuX743een2w/ZtAN1tP6T0
+f85TbxxKfmrvmjT2y+V5rc3ri0q+txQtuNGNrhxc3ZjIG106NTHvbOhO5p6Hz5tv
+1SbXHXHH59d9Kda6D7+d+/7m/HBq14+Wp8mm/MjamUfHgZWpZRNynnUXH9uy8eO1
+iesa3iVm9FSmLGws333ywk83Ikjr
+=4ABA
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/oisinq
+
+==================================================================
