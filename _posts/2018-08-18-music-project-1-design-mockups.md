@@ -2,12 +2,12 @@
 id: 33
 title: 'Music Project Update #1 &#8211; Design Mockups'
 date: 2018-08-18T23:14:32+00:00
-author: Oisin
+author: Oisín
 layout: post
 guid: https://oisin.io/b/?p=33
 #permalink: /2018/08/18/music-project-1-design-mockups/
 categories:
-  - Uncategorised
+  - dev
 ---
 So, I’ve had an idea that I think is good enough to make into a full side-project. It’s nothing super technical, it’s not a million-dollar idea, but it’s something fun that I think could have an impact on my community. Without giving the specific idea away, it’s a website that involves playing music in some way.
 <!--more-->

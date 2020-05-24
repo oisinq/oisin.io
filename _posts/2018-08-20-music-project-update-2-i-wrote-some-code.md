@@ -2,12 +2,12 @@
 id: 52
 title: 'Music Project Update #2 – I wrote some code!'
 date: 2018-08-20T00:37:22+00:00
-author: Oisin
+author: Oisín
 layout: post
 guid: https://oisin.io/b/?p=52
 #permalink: /2018/08/20/music-project-update-2-i-wrote-some-code/
 categories:
-  - Uncategorised
+  - dev
 ---
 It’s been a long day, but I got a lot of work done in relation to this project. I started off finishing off my design concept. I put in the black gradient that I mentioned in the last post and added a review placeholder (which I borrowed from Hot Press – sorry guys!).
 <!--more-->

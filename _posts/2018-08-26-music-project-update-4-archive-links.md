@@ -2,12 +2,12 @@
 id: 73
 title: 'Music Project Update #4 &#8211; Archive &#038; Links'
 date: 2018-08-26T02:34:17+00:00
-author: Oisin
+author: Oisín
 layout: post
 guid: https://oisin.io/b/?p=73
 #permalink: /2018/08/26/music-project-update-4-archive-links/
 categories:
-  - Uncategorised
+  - dev
 ---
 I know I posted eight or so hours ago, but I've done a lot of work in that time. I've finished the Archive page, and set up a linking system that loads specific tracks into the Home component depending on what URL is entered.
 

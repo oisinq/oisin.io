@@ -2,12 +2,12 @@
 id: 68
 title: 'Music Project Update #3 &#8211; Routing, Reading from JSON and Archive Design'
 date: 2018-08-25T18:10:35+00:00
-author: Oisin
+author: Oisín
 layout: post
 guid: https://oisin.io/b/?p=68
 #permalink: /2018/08/25/music-project-update-3-routing-reading-from-json-and-archive-design/
 categories:
-  - Uncategorised
+  - dev
 ---
 So far this week, I've made some good progress in getting this project up and running.
 

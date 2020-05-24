@@ -1,10 +1,10 @@
 ---
 title: 'New blog, who dis?'
 date: 2019-01-01T21:54:00+00:00
-author: Oisin
+author: Oisín
 layout: post
 categories:
-  - Uncategorised
+  - meta
 ---
 Soooo I've rearranged things on here again. I've had free shared web hosting on www.ecowebhosting.co.uk for the past three or four years, but that's finally running out very soon. So I decided I'd move this site over to Netlify, because it has no reason not to be static. The homepage was fine but for this blog, I moved from WordPress over to Jekyll with the [Poole theme](https://github.com/poole/poole). I made very few adjustments to the default, apart from adding post previews to the homepage instead of the full post.
 
