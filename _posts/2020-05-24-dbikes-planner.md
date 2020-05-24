@@ -1,6 +1,6 @@
 ---
 title: "dBikes Planner – Predictive Cycle Route-Planning for Dublinbikes"
-date: 2019-01-01T21:54:00+00:00
+date: 2019-05-24T21:54:00+00:00
 author: Oisín
 layout: post
 categories:
@@ -32,22 +32,18 @@ The back-end for this project is a Flask web server in Python. It uses a microse
 The app is currently designed to run on Google AppEngine, incorporating many Google Cloud features. Cloud Storage is used to store historical bike data, and Cloud Functions and Cloud Scheduler are used to add the latest data to this dataset. CycleStreets and OpenStreetMap are used for generating routes.
 
 ![UML Diagram](https://dev-to-uploads.s3.amazonaws.com/i/teas901k5a8a88c3engo.png)
-
-<figcaption>UML Diagram of the system architecture</figcaption>
+_UML Diagram of the system architecture_
 
 The front-end is an Android application. It displays the location and status of each station in Dublin, as well as historical data for a station. Users can input a destination, and will receive a cycling route to reach this destination, incorporating bike-sharing stations. Basic directions are also provided.
 
 ![The app's map view](https://dev-to-uploads.s3.amazonaws.com/i/y7caju8eei9nejqyz9wf.jpg)
-
-<figcaption>The main map view of the application, showing the status of each station in the Dublinbikes bike-sharing scheme</figcaption>
+_The main map view of the application, showing the status of each station in the Dublinbikes bike-sharing scheme_
 
 ![The app's station view](https://dev-to-uploads.s3.amazonaws.com/i/na3fwj0sluei7kaniz24.jpg)
-
-<figcaption>When a user clicks on a station, they can see a Google Street View of the station location, and a graph showing historical and current bike availability.</figcaption>
+_When a user clicks on a station, they can see a Google Street View of the station location, and a graph showing historical and current bike availability._
 
 ![The app's route view](https://dev-to-uploads.s3.amazonaws.com/i/elfz88g01ev4klxiyumi.jpg)
-
-<figcaption>The user can generate a route, and it'll match up the route to the most appropriate bike station, take bike availability prediction into account.</figcaption>
+_The user can generate a route, and it'll match up the route to the most appropriate bike station, take bike availability prediction into account._
 
 I honestly encountered more failures than I can mention in one post, but I managed to overcome all of them by taking a step back, thinking about the core problem I'm trying to solve and coming up with a reasonable compromise.
 
