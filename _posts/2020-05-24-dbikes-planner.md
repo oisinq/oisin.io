@@ -1,6 +1,6 @@
 ---
 title: "dBikes Planner – Predictive Cycle Route-Planning for Dublinbikes"
-date: 2020-05-24T20:54:00+00:00
+date: 2020-05-24T19:24:00+00:00
 author: Oisín
 layout: post
 categories:
