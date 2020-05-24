@@ -1,6 +1,6 @@
 ---
 title: "dBikes Planner – Predictive Cycle Route-Planning for Dublinbikes"
-date: 2019-05-24T21:54:00+00:00
+date: 2020-05-24T20:54:00+00:00
 author: Oisín
 layout: post
 categories:
@@ -54,5 +54,3 @@ I was really impressed by the versatility of Google Cloud. I never used gcloud b
 This project thought me a lot about Android, Python and ML. In my mind, each of these points are nearly projects in themselves, and it was really satisfying to link them altogether as the project went on. I was pretty new to the worlds of Python and ML, but the availability of so many libraries in Python made it really easy to get up-and-running fast.
 
 Overall, I'm really happy with the finished product. I'm not 100% sure if I'll end up officially releasing the app on Google Play (need to make sure it doesn't bankrupt me lol) but this was still a really good learning experience. I've got **many** issues up on [GitHub](https://github.com/oisinq/fyp/issues) if anyone's interested in helping out, or you can download the [.apk over here](https://github.com/oisinq/fyp/releases) if you're based in Dublin.
-
-If you liked this post, [follow me on Twitter](https://twitter.com/oisinq_). I'm more fun there, I promise.
