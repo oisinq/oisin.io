@@ -17,7 +17,7 @@ dBikes Planner is an Android journey planning app for cyclists using the Dublinb
 
 Here's the app in action (in all its dark mode glory):
 
-<!-- {% youtube Bgo1CEgx-2w %} -->
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Bgo1CEgx-2w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 I'm really happy with how it all turned out! Android UI is finnicky at times, but I think the end result is a very usable app.
 
