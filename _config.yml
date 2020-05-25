@@ -1,32 +1,32 @@
 # Permalinks
-permalink:           b/:year/:month/:day/:title/
+permalink: b/:year/:month/:day/:title/
 
 # Setup
-title:               Oisin's Blog
-tagline:             dev, etc
-url:                 https://twitter.com/oisin1001
-paginate:            5
-paginate_path:       "b/page:num"
-baseurl:             ""
+title: Oisín Quinn
+tagline: dev, music, etc
+url: https://twitter.com/oisinq_
+paginate: 5
+paginate_path: "b/page:num"
+baseurl: ""
 excerpt_separator: <!--more-->
 
 # Assets
 #
 # We specify the directory for Jekyll so we can use @imports.
 sass:
-  sass_dir:          _sass
-  style:            :compressed
+  sass_dir: _sass
+  style: :compressed
 
 # About/contact
 author:
-  name:              Oisin Quinn
-  url:               https://twitter.com/oisin1001
-  email:             me@oisin.io
+  name: Oisín Quinn
+  url: https://twitter.com/oisinq_
+  email: me@oisin.io
 
 # Custom vars
-version:             2.0.0
+version: 2.0.0
 github:
-  repo:              https://github.com/poole/poole
+  repo: https://github.com/poole/poole
 
 # Gems
 plugins:
