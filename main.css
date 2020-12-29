@@ -36,8 +36,6 @@ body {
 }
 
 body {
-  /* background-color: #328fc0; */
-  /* background-image: url("triangles.jpg"); */
   background-position: center;
   background-size: cover;
   display: -ms-flexbox;
@@ -138,7 +136,7 @@ a {
 }
 
 i {
-  font-size: 48px;
+  font-size: 52px;
   padding: 4px;
 }
 
@@ -156,3 +154,53 @@ canvas {
   left: 0;
   z-index: -1;
 }
+
+@font-face {
+  font-family: "fontello";
+  src: url("./font/fontello.eot?15816334");
+  src: url("./font/fontello.eot?15816334#iefix") format("embedded-opentype"),
+    url("./font/fontello.woff2?15816334") format("woff2"),
+    url("./font/fontello.woff?15816334") format("woff"),
+    url("./font/fontello.ttf?15816334") format("truetype"),
+    url("./font/fontello.svg?15816334#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?15816334#fontello') format('svg');
+  }
+}
+*/
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "fontello";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  font-weight: 900;
+  line-height: 1;
+  display: inline-block;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-mail-squared:before {
+  content: "\f199";
+} /* '' */
+.icon-github-squared:before {
+  content: "\f300";
+} /* '' */
+.icon-twitter-squared:before {
+  content: "\f304";
+} /* '' */
+.icon-linkedin-squared:before {
+  content: "\f30c";
+} /* '' */
