@@ -6,21 +6,31 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="shortcut icon" href="public/favicon.ico" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-      crossorigin="anonymous"
-    />
-
-    <!-- Custom styles for this template -->
     <link href="main.css" rel="stylesheet" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="public/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="public/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="public/favicon-16x16.png"
+    />
+    <link rel="manifest" href="public/site.webmanifest" />
 
     <title>Oisín Quinn</title>
   </head>
 
-  <body id="altBG">
+  <body id="body">
     <canvas id="canvas"></canvas>
     <div class="cover-container" id="main-div">
       <main role="main" class="cover">
@@ -41,66 +51,25 @@
         <p class="lead"><a href="./b/" class="link">Blog</a></p>
         <br />
         <a href="https://github.com/oisinq" rel="me"
-          ><i class="fab fa-github-square"></i
+          ><i class="icon-github-squared"></i
         ></a>
-        <a href="mailto:me@oisin.io"><i class="fas fa-envelope-square"></i></a>
+        <a href="mailto:me@oisin.io"><i class="icon-mail-squared"></i></a>
         <a href="https://twitter.com/oisinq_" rel="me"
-          ><i class="fab fa-twitter-square"></i
+          ><i class="icon-twitter-squared"></i
         ></a>
         <a href="https://linkedin.com/in/oisinq" rel="me"
-          ><i class="fab fa-linkedin"></i
+          ><i class="icon-linkedin-squared"></i
         ></a>
       </main>
     </div>
   </body>
-  <!-- <script>
-    const canvas = document.getElementById("canvas");
-    const body = document.getElementById("body");
-    const ctx = canvas.getContext("2d");
-
-    canvas.width = document.body.clientWidth;
-    canvas.height = document.body.clientHeight;
-    var radius = ctx.canvas.width * 0.4;
-    console.log(radius);
-    
-    
-
-    body.addEventListener('mousemove', function(evt) {
-      // ctx.globalCompositeOperation = 'destination-out';
-      // ctx.arc(canvas.width, canvas.height, radius, 0, Math.PI*2, true);
-      // ctx.fill();
-      // ctx.globalCompositeOperation = 'source-over';
-
-      
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-        const mousePos = {
-          x: evt.clientX,
-          y: evt.clientY
-        };
-
-
-      var grd = ctx.createRadialGradient(mousePos.x, mousePos.y, radius/5, mousePos.x, mousePos.y, radius);
-
-      grd.addColorStop(0, "rgba(255, 255, 255, 0.2)");
-      grd.addColorStop(1, "rgba(255, 255, 255, 0)");
-
-        ctx.beginPath();
-        ctx.fillStyle = grd;
-        ctx.arc(mousePos.x, mousePos.y, radius, 0,  2 * Math.PI);
-        ctx.fill();
-
-      }, false);
-
-      canvas.addEventListener('click', function() {console.log("Clicked!") }, false);
-    </script> -->
   <script src="triangles.js"></script>
   <script>
     var canvas = document.getElementById("canvas");
     canvas.width = document.body.clientWidth;
     canvas.height = document.body.clientHeight;
 
-    var altBG = document.getElementById("altBG");
+    var altBG = document.getElementById("body");
     var color = {
       baseHue: Math.floor(Math.random() * Math.floor(360)),
       baseSaturation: 100,
@@ -116,15 +85,7 @@
       mouseLightRadius: 500,
       mouseLightIncrement: 10,
       resizeAdjustment: true,
-      pattern: "x*y",
       baseColor1: color,
-      baseColor2: {
-        baseHue: 0,
-        baseSaturation: 0,
-        baseLightness: 0,
-      },
     });
-
-    console.log(color);
   </script>
 </html>

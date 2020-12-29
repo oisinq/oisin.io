@@ -4,11 +4,6 @@ Copyright (c) 2015 Taylor Lei
 Licensed under the MIT license.
 */
 var TriangleBG = function (opts) {
-  if (opts.canvas.tagName !== "CANVAS") {
-    console.log("Warning: triangles.js requires a canvas element!");
-    return;
-  }
-
   //set primary canvas and context
   this.canvas = opts.canvas;
   this.ctx = this.canvas.getContext("2d");
