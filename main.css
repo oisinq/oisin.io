@@ -16,9 +16,8 @@ a:hover {
   color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #fff;
-  border: .05rem solid #fff;
+  border: 0.05rem solid #fff;
 }
-
 
 /*
  * Base structure
@@ -27,24 +26,52 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #328fc0;
-  background-image: url("triangles.jpg");
-  background-position: center;
-  background-size: cover;
+  text-align: center;
+  font-family: system-ui, -apple-system,
+    /* Firefox supports this but not yet `system-ui` */ "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  margin: 0;
+  padding: 0;
+  border-top: none;
 }
 
 body {
+  /* background-color: #328fc0; */
+  /* background-image: url("triangles.jpg"); */
+  background-position: center;
+  background-size: cover;
   display: -ms-flexbox;
   display: flex;
+  justify-content: center;
   color: #fff;
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.25rem;
+  font-weight: 300;
 }
 
 .cover-container {
   max-width: 42em;
+  top: 0;
+  left: 0;
+  margin-top: auto;
+  margin-bottom: auto;
 }
-
 
 /*
  * Header
@@ -58,16 +85,16 @@ body {
 }
 
 .nav-masthead .nav-link {
-  padding: .25rem 0;
+  padding: 0.25rem 0;
   font-weight: 700;
-  color: rgba(255, 255, 255, .5);
+  color: rgba(255, 255, 255, 0.5);
   background-color: transparent;
-  border-bottom: .25rem solid transparent;
+  border-bottom: 0.25rem solid transparent;
 }
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255, 255, 255, .25);
+  border-bottom-color: rgba(255, 255, 255, 0.25);
 }
 
 .nav-masthead .nav-link + .nav-link {
@@ -88,6 +115,9 @@ body {
   }
 }
 
+a {
+  text-decoration: none;
+}
 
 /*
  * Cover
@@ -96,27 +126,33 @@ body {
   padding: 0 1.5rem;
 }
 .cover .btn-lg {
-  padding: .75rem 1.25rem;
+  padding: 0.75rem 1.25rem;
   font-weight: 700;
 }
-
 
 /*
  * Footer
  */
 .mastfoot {
-  color: rgba(255, 255, 255, .5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 i {
-    font-size: 48px;
-    padding: 4px;
+  font-size: 48px;
+  padding: 4px;
 }
 
-#radio-link {
-    text-decoration: underline;
+.link {
+  text-decoration: underline;
 }
 
-p { 
-    margin: 6px;
+p {
+  margin: 6px;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
