@@ -26,11 +26,18 @@ a:hover {
 html,
 body {
   height: 100%;
+  text-align: center;
+  font-family: system-ui, -apple-system,
+    /* Firefox supports this but not yet `system-ui` */ "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  margin: 0;
+  padding: 0;
+  border-top: none;
 }
 
 body {
-  background-color: #328fc0;
-  background-image: url("triangles.jpg");
+  /* background-color: #328fc0; */
+  /* background-image: url("triangles.jpg"); */
   background-position: center;
   background-size: cover;
   display: -ms-flexbox;
@@ -41,10 +48,29 @@ body {
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
 }
 
+h1 {
+  font-size: 2.5rem;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
 .cover-container {
   max-width: 42em;
   top: 0;
   left: 0;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 /*
@@ -89,6 +115,10 @@ body {
   }
 }
 
+a {
+  text-decoration: none;
+}
+
 /*
  * Cover
  */
@@ -112,7 +142,7 @@ i {
   padding: 4px;
 }
 
-#radio-link {
+.link {
   text-decoration: underline;
 }
 
