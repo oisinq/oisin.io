@@ -29,15 +29,21 @@
     <link href="main.css" rel="stylesheet" />
   </head>
 
-  <body class="text-center">
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <body class="text-center" id="body">
+    <canvas id="canvas"> </canvas>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" id="main-div">
       <main role="main" class="inner cover mt-auto mb-auto">
         <h1 class="cover-heading">Oisín Quinn</h1>
-        <h3>Software Engineer at <a href="https://product.hubspot.com/blog">HubSpot</a></h3>
+        <h3>
+          Software Engineer at
+          <a href="https://product.hubspot.com/blog">HubSpot</a>
+        </h3>
         <p class="lead">Front-end engineer playing with React and JavaScript</p>
         <p class="lead">
           Producer &amp; host of
-          <a href="https://open.spotify.com/show/2svlOsZFI3q36MaGnnmGyC" id="radio-link"
+          <a
+            href="https://open.spotify.com/show/2svlOsZFI3q36MaGnnmGyC"
+            id="radio-link"
             >Quinntessentials</a
           >
         </p>
@@ -56,4 +62,46 @@
       </main>
     </div>
   </body>
+  <script>
+    const canvas = document.getElementById("canvas");
+    const body = document.getElementById("body");
+    const ctx = canvas.getContext("2d");
+
+    canvas.width = document.body.clientWidth;
+    canvas.height = document.body.clientHeight;
+    var radius = ctx.canvas.width * 0.4;
+    console.log(radius);
+    
+    
+
+    body.addEventListener('mousemove', function(evt) {
+      // ctx.globalCompositeOperation = 'destination-out';
+      // ctx.arc(canvas.width, canvas.height, radius, 0, Math.PI*2, true);
+      // ctx.fill();
+      // ctx.globalCompositeOperation = 'source-over';
+
+      
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        const mousePos = {
+          x: evt.clientX,
+          y: evt.clientY
+        };
+
+
+      var grd = ctx.createRadialGradient(mousePos.x, mousePos.y, radius/5, mousePos.x, mousePos.y, radius);
+
+      grd.addColorStop(0, "rgba(255, 255, 255, 0.2)");
+      grd.addColorStop(1, "rgba(255, 255, 255, 0)");
+
+        ctx.beginPath();
+        ctx.fillStyle = grd;
+        ctx.arc(mousePos.x, mousePos.y, radius, 0,  2 * Math.PI);
+        ctx.fill();
+
+      }, false);
+
+      canvas.addEventListener('click', function() {console.log("Clicked!") }, false);
+    </script>
+  </script>
 </html>
