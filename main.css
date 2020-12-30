@@ -44,6 +44,8 @@ p {
   left: 0;
   margin-top: auto;
   margin-bottom: auto;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 a,
