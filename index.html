@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="description" content="Oisín Quinn's personal website">
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -27,20 +28,22 @@
     />
     <link rel="manifest" href="public/site.webmanifest" />
 
+    <script src="triangles.js"></script>
+
     <title>Oisín Quinn</title>
   </head>
 
   <body id="body">
     <canvas id="canvas"></canvas>
-    <div class="cover-container" id="main-div">
-      <main role="main" class="cover">
-        <h1 class="cover-heading">Oisín Quinn</h1>
-        <h3>
+    <div id="cover">
+      <main role="main">
+        <h1>Oisín Quinn</h1>
+        <h2>
           Software Engineer at
           <a href="https://product.hubspot.com/blog">HubSpot</a>
-        </h3>
-        <p class="lead">Front-end engineer playing with React and JavaScript</p>
-        <p class="lead">
+        </h2>
+        <p>Front-end engineer playing with React and JavaScript</p>
+        <p>
           Producer &amp; host of
           <a
             href="https://open.spotify.com/show/2svlOsZFI3q36MaGnnmGyC"
@@ -48,22 +51,35 @@
             >Quinntessentials</a
           >
         </p>
-        <p class="lead"><a href="./b/" class="link">Blog</a></p>
+        <p><a href="./b/" class="link">Blog</a></p>
         <br />
-        <a href="https://github.com/oisinq" rel="me"
+        <a
+          href="https://github.com/oisinq"
+          rel="me"
+          aria-label="My GitHub profile"
           ><i class="icon-github-squared"></i
         ></a>
-        <a href="mailto:me@oisin.io"><i class="icon-mail-squared"></i></a>
-        <a href="https://twitter.com/oisinq_" rel="me"
+        <a href="mailto:me@oisin.io"
+          ><i
+            class="icon-mail-squared"
+            aria-label="My personal email address"
+          ></i
+        ></a>
+        <a
+          href="https://twitter.com/oisinq_"
+          rel="me"
+          aria-label="My Twitter profile"
           ><i class="icon-twitter-squared"></i
         ></a>
-        <a href="https://linkedin.com/in/oisinq" rel="me"
+        <a
+          href="https://linkedin.com/in/oisinq"
+          rel="me"
+          aria-label="My LinkedIn profile"
           ><i class="icon-linkedin-squared"></i
         ></a>
       </main>
     </div>
   </body>
-  <script src="triangles.js"></script>
   <script>
     var canvas = document.getElementById("canvas");
     canvas.width = document.body.clientWidth;
