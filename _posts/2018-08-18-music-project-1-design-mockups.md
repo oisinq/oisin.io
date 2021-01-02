@@ -1,11 +1,9 @@
 ---
 id: 33
-title: "Music Project Update #1 &#8211; Design Mockups"
+title: "Music Project Update #1 – Design Mockups"
 date: 2018-08-18T23:14:32+00:00
 author: Oisín
 layout: post
-guid: https://oisin.io/b/?p=33
-#permalink: /2018/08/18/music-project-1-design-mockups/
 categories:
   - dev
 ---
@@ -20,11 +18,12 @@ With that in mind, I wanted to have the design roughly sorted out before I went 
 
 Anyway, last week I downloaded Sketch and started messing around. My website will be showcasing small Irish musicians, so I thought I’d use my friend [James Bentley](http://facebook.com/jamesbentleymusic) as a starting point for mock-ups. I want the website to be minimalist and pretty, so I threw a few shapes on the screen, and this is what I came out with at first.
 
-![](/img/08/amhran-first-draft-e1534627912648.png)
+![First draft of the design for amhran.ie](/img/08/amhran-first-draft-e1534627912648.png)
 _Not bad… I think_
 
 I definitely want to have the picture front and centre and I think it looks good… but I didn’t think it was quite there yet. I decided to look for inspiration (basically I googled “music good web design”). I saw something that reminded me of the surprisingly-great Shazam app, which I think definitely inspired me.
 
+<!-- markdownlint-disable MD033 -->
 <img src="/img/08/IMG_8253.jpg" height="700" />
 *Even though the background image is low-res, it’s still so pretty*
 

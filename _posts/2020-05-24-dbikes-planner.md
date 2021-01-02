@@ -19,6 +19,7 @@ dBikes Planner is an Android journey planning app for cyclists using the Dublinb
 
 Here's the app in action (in all its dark mode glory):
 
+<!-- markdownlint-disable MD033 -->
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Bgo1CEgx-2w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 You can check out the codebase on the [GitHub repo](https://github.com/oisinq/fyp), or the formal [Final Report](https://github.com/oisinq/fyp), which goes into much more detail than this post will on the background, implementation, design and results.
