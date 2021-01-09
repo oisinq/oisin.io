@@ -6,11 +6,20 @@ layout: post
 categories:
   - music
 ---
-I have a bit of a Twitter tradition of posting a chart of my favourite albums of each year. I [repeated that tradition for 2019](https://twitter.com/oisinq_/status/1212517602095980545/), picking out 24 albums that I really liked that came out this year. I thought I'd change things up this year with a bit of a write-up about these albums, what I liked about them and hopefully I'll be able to introduce you to something you haven't heard before.
 
-<!--more-->
+It's very strange to think that another year is over. I can split this year into three very distinct eras: the first two months of the year were incredibly busy with [SISTEM 2020](https://sistem.intersocs.ie), followed by 4 months of cramming my final year of college, finishing off with half a year of my first full-time job.
 
-I'm splitting these up into vague tiers to make it clearer how much I liked a specific album. I'm going for "Favourites", "Great albums", "Good albums" and "Good albums I didn’t listen to enough". Inside each section, they're listed alphabetically by artist. Enjoy!
+Because of the... circumstances, I've found myself listening to a lot of music. While I spent a lot of the year listening to "lofi hip hop radio - beats to relax/study to", I also tried my best to listen to some new music. This is the post where I'll chat about the albums I liked the most.
+
+{% twitter "https://twitter.com/oisinq_/status/1345118451447312385" %}
+
+This year, I didn't have my finger on the pulse of new music in the same way I normally would. I found myself listening to comfort music way more often than I normally would, and I also gave the "1001 Albums You Must Hear Before You Die" challenge a go for a while thanks to [this cool site](https://1001albumsgenerator.com). I got obsessed with The Beatles for a few months at the end there when I listened to The White Album on repeat for a month.
+
+{% twitter "https://twitter.com/oisinq_/status/1345120108285468672" %}
+
+But I still found a good few new albums that I really liked. Here's a write-up about what new albums I loved the most the most this year, and hopefully you'll find something new that you'll love.
+
+Like last year, I'm splitting these up into vague tiers to make it clearer how much I liked a specific album. I'm going for "Favourites", "Great albums", "Good albums" and "Good albums I didn’t listen to enough". Inside each section, they're listed alphabetically by artist. Enjoy!
 
 ---
 
@@ -22,53 +31,59 @@ The albums I loved the most this year.
 
 {% include spotify_track.html id="6b5P51m8xx2XA6U7sdNZ5E" %}
 
-I think I discovered 100 gecs in early October when Popcast [dedicated an episode](https://www.nytimes.com/2019/10/05/arts/music/popcast-100-gecs.html) to their debut album. I don't know how to describe them, apart from as exactly my cup of tea. It's a weird mesh of genres that shouldn't be combined (probably best described as experimental pop), but it always works.
+This has to be my album of the year. It took me a few listens for it to click, but by god. When I heard the contrast between the sadness of _Escape From LA_ into the incredibly-egotistic braggadocio of _Heartless_, that's when it all made sense to me. There isn't a bad track on this album.
 
-It's only 23 mins long, with two of the ten tracks being weird filler, but each song has its own distinct identity, while maintaining a signature overblown sound across the whole project. I really love this and can't wait to see what they do next.
+I've never been the biggest fan of The Weeknd. I've enjoyed some of his past projects but they always seemed to fall short for me. _Trilogy_ never clicked for me. _Beauty Behind The Madness_ and _My Dear Melancholy,_ bored me. I liked _Starboy_, but I thought it was really inconsistent outside of its solid start. (Also Sidewalks is a really awful Kendrick feature imo.)
+
+Yet I absolutely adored After Hours. I think it had a really great mix of pop and hip-hop, but The Weeknd shined most on the moody R&B tracks with really beautiful, atmosphere-building synths.
+
+I got into this album just when Ireland started to go into lockdown for the first time in March. I left my apartment in Dublin to head back home to Cavan. I was also absolutely swamped with college work. I think after a week of non-stop listening, I knew this was something very special.
 
 Highlights:
 
-* money machine
-* stupid horse
-* ringtone
+* After Hours
+* Alone Again
+* Heartless
 
 ### The Avalanches – We Will Always Love You
 
 {% include spotify_track.html id="51wxtCuipwjvvT99wsSmCc" %}
 
-Blood Orange is an artist that I've never been able to get into (last year's Negro Swan did nothing for me), but this mixtape is when it finally clicked for me. All of the collaborations work well. Gold Teeth is the perfect mid-project twist and took me by surprise. I was a fan of the lo-fi feel of the project as a whole, and I love how everything just flows together as it should. Also it's a short enough listen, which I'm always a fan of.
+This was a bit of a late contender for this list, coming out on 11th December 2020. I liked _Since I Left You_, the band's 2001 debut album, but I didn't know what to expect going into this. I was really pleasantly surprised.
+
+This album feels like a bit of a re-invention for the group, moving away from the unwieldy amount of samples of past albums and instead inviting loads of collaborators like MGMT, Blood Orange, Jamie xx, Kurt Vile and Rivers Cuomo.
+
+It's a really cohesive project and the kind of album I can easily listen to the whole way through, even though it has 25 tracks that all do their own thing. Highly recommended.
 
 Highlights:
 
-* Dark & Handsome
-* Good For You
-* Gold Teeth
+* We Will Always Love You (feat. Blood Orange)
+* Running Red Lights (feat. Rivers Cuomo and Pink Siifu)
+* Take Care In Your Dreaming (feat. Denzel Curry, Tricky and Sampa the Great)
 
 ### Gorillaz – Song Machine, Season One: Strange Timez
 
 {% include spotify_track.html id="7rhtPZkcGCWgA3kizGwXwO" %}
 
-I didn't have the highest expectations going into this project, but I loved Flume's latest mixtape. It's experimental but still pretty accessible. This isn't the most serious project in the world (calling it a mixtape is a tell-tale sign of that), but I think that's why it's so great. The features and collaborations work well, with JPEGMAFIA's being my favourite.
 
-This was probably the first release of 2019 that I loved. I haven't gone back to it much since then, but it's still a very enjoyable listen.
 
 Highlights:
 
-* How To Build A Relationship
-* Jewel
-* High Beams
+* Désolé (feat. Fatoumata Diawara)
+* How Far? (feat. Tony Allen and Skepta)
+* Aries (feat. Peter Hook and Georgia)
 
 ### Chris Stapleton – Starting Over
 
 {% include spotify_track.html id="3K07bGe8iljQ3mOKArHLDo" %}
 
-I know, this is kinda cheating, but it needs to be mentioned. This was by far my favourite album I discovered this year, and /technically/ it first released in 2019, so I think that counts. This album is a beautiful mess, with a million things happening at once and vocals dropping out at random points. It's mayhem but it's also perfect. It was [my most listened-to album from 2019](https://www.last.fm/user/Oisin1001/library/albums?from=2019-01-01&rangetype=year), which is 100% deserved. This is the only album I listened to this year where I knew I'd love it straight away, and I know I'm going to still be listening to it in 2030.
+I always seem to have a country phase at the end of
 
 Highlights:
 
-* Genevieve
-* jasmine
-* Str8 Outta Mumbai
+* Starting Over
+* Arkansas
+* Whiskey Sunrise
 
 ### Thundercat – It Is What It Is
 
@@ -80,9 +95,9 @@ Recently I was in a really stressful place, and not able to think straight. I de
 
 Highlights:
 
-* Dawn Chorus
-* Traffic
-* Not The News
+* Fair Chance (feat. Ty Dolla $ign and Lil B)
+* Dragonball Durag
+* I Love Louis Cole (feat. Louis Cole)
 
 ---
 
@@ -98,9 +113,9 @@ I liked Dangerous Woman and Sweetener, but Ariana Grande's album is her best yet
 
 Highlights:
 
-* NASA
-* fake smile
-* needy
+* Liffey
+* Donaghmede
+* Harvey
 
 ### Denzel Curry and Kenny Beats – UNLOCKED
 
@@ -112,9 +127,9 @@ If you want to listen to these, YouTube has the best versions of each mixtape. H
 
 Highlights:
 
-* Ná Caitheamh Tobac
-* Bandz
-* Langer
+* DIET_
+* Take_it_Back_v2
+* 'Cosmic'.m4a
 
 ### Fontaines D.C. – A Hero's Death
 {% include spotify_track.html id="4xCA8KYdeVe3AmTTEYJtVp" %}
@@ -123,9 +138,9 @@ I still think this album's really underrated. I'm not sure if it's better than G
 
 Highlights:
 
-* Baby Boy
-* Peach
-* Joyride
+* I Don't Belong
+* A Lucid Dream
+* You Said
 
 ### Taylor Swift – Folklore
 
@@ -135,9 +150,9 @@ Between this and Kacey Musgraves, I went through a country phase towards the end
 
 Highlights:
 
-* Winds Change
-* Dead of Night
-* 
+* exile (feat. Bon Iver)
+* my tears ricochet
+* mirrorball
 
 ### The Strokes – The New Abnormal
 
@@ -147,9 +162,9 @@ Highlights:
 
 Highlights:
 
-* Mathematics
-* Hero
-* Mortal Kombat
+* Eternal Summer
+* Bad Decisions
+* Brooklyn Bridge To Chorus
 
 ### Gemma Dunleavy – UP DE FLATS
 
@@ -163,9 +178,9 @@ Also I cracked up when I noticed the [Murder on the Dancefloor](https://www.yout
 
 Highlights:
 
-- What Do You Mean?
-- Bullet From A Gun
-- Greaze Mode
+* Up De Flats
+* Stop The Lights
+* Cruisin
 
 ### Tame Impala – The Slow Rush
 
@@ -175,9 +190,9 @@ I was cynical going into this album, but in hindsight Tyler succeeded at creatin
 
 Highlights:
 
-* A BOY IS A GUN
-* EARFQUAKE
-* ARE WE STILL FRIENDS?
+* One More Year
+* Breathe Deeper
+* Instant Destiny
 
 ### YHLQMDLG – Bad Bunny
 
@@ -187,9 +202,9 @@ I loved the singles for this album, but didn't care for it much when it came out
 
 Highlights:
 
-* Unbearably White
-* Harmony Hall
-* This Life
+* Si Veo a Tu Mamá
+* La Difícil
+* Pero Ya No
 
 ---
 
@@ -201,11 +216,23 @@ Highlights:
 
 I don't have anything to say about this that hasn't been said already, but this was a really good debut pop album. I don't think anyone thought Bad Guy would be as massive as it was when we first heard it on this album. (even though I still think of [Crash Bandicoot when I hear the intro](https://twitter.com/theycallmemac_/status/1111600220641652736)).
 
+Highlights:
+
+* Pressure In My Palms(feat. slowthai and Vince Staples)
+* Fetus (feat. Injury Reserve)
+* Woodlawn
+
 ### Mac Miller – Circles
 
 {% include spotify_track.html id="4jXl6VtkFFKIt3ycUQc5LT" %}
 
 I loved 2016's 22, A Million, so I was really hyped for this album. I enjoyed it, but I can't put it on the same level as Bon Iver's previous albums. It's fun to listen to and has some really good singles, but it doesn't hit as hard as their previous work. But when the bar is so high, even coming short results in a really good album, and I enjoyed i,i a lot.
+
+Highlights:
+
+* Circles
+* Good News
+* Blue World
 
 ### Nealo – All The Leaves Are Falling
 
@@ -213,12 +240,16 @@ I loved 2016's 22, A Million, so I was really hyped for this album. I enjoyed it
 
 Just like ARIZONA BABY, I think GINGER is a bit underrated. I really enjoyed the singles, and No Halo is one of their best songs ever. I haven't gone back to this album much, but I still think it's an enjoyable one and better than what some hardcore fans like to say it is.
 
+Highlights:
+
+* Angel on My Shoulder (feat. INNERSPACE)
+* Let Your Dreams Collect Dust Until You're Desperate (feat. Molly Sterling, Adam Garrett and Jehnova)
+* All the Leaves Are Falling (feat. Molly Sterling)
+
 ## Good albums I didn't listen to enough
 
 none!
 
 ---
 
-That was longer than I expected lol
-
-There were a lot of big albums missing from this list. The main reason is that I probably haven't listened to them, or listened to them enough times for them to click with me. So if anyone has any reccomendations that I missed out on, let me know on [Twitter](https://twitter.com/oisinq_) and I'd be happy to check them out.
+There were a lot of big albums missing from this list. The main reason is that I probably haven't listened to them, or listened to them enough times for them to click with me. So if anyone has any recommendations that I missed out on, let me know on [Twitter](https://twitter.com/oisinq_) and I'd be happy to check them out.
