@@ -2,9 +2,10 @@
 permalink: b/:year/:month/:day/:title/
 
 # Setup
-title: Oisín Quinn
+title: Oisín's blog
 tagline: dev, music, etc
-url: https://twitter.com/oisinq_
+description: My personal blog, where I talk about technology, writing software, music and anything else that interests me.
+url: https://oisin.io/b
 paginate: 5
 paginate_path: "b/page:num"
 baseurl: ""
@@ -33,3 +34,16 @@ plugins:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-twitter-plugin
+  - jekyll-seo-tag
+
+twitter:
+  username: oisinq_
+  card: summary
+
+social:
+  name: Oisín Quinn
+  links:
+    - https://twitter.com/oisinq_
+    - https://www.linkedin.com/in/oisinq
+    - https://github.com/oisinq
+    - https://keybase.io/oisinq
