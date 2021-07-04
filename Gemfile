@@ -11,4 +11,5 @@ group :jekyll_plugins do
   gem "jekyll-gist"
   gem 'jekyll-twitter-plugin'
   gem 'jekyll-seo-tag'
+  gem 'jekyll-tagging'
 end

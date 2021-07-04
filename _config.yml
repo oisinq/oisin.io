@@ -47,3 +47,8 @@ social:
     - https://www.linkedin.com/in/oisinq
     - https://github.com/oisinq
     - https://keybase.io/oisinq
+
+tag_page_layout: tag_page
+tag_page_dir: /b/tag
+
+tag_permalink_style: pretty
