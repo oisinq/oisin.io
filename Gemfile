@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 
 gem "jekyll"
-gem "sassc", "2.1.0"
+gem "sassc", "2.4.0"
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
