@@ -3,6 +3,7 @@ id: 33
 title: "Music Project Update #1 – Design Mockups"
 date: 2018-08-18T23:14:32+00:00
 author: Oisín
+tags: amhran
 layout: post
 categories:
   - dev

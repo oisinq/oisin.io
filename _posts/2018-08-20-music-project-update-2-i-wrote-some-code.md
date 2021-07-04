@@ -3,6 +3,7 @@ id: 52
 title: 'Music Project Update #2 – I wrote some code!'
 date: 2018-08-20T00:37:22+00:00
 author: Oisín
+tags: amhran
 layout: post
 categories:
   - dev
