@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" class="text-custom-grey h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link ref="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <title>Oisín Quinn</title>
+  </head>
+  <body class="h-full">
+    <!-- Green hero section -->
+    <div
+      class="
+        flex flex-col
+        md:flex-row md:items-end
+        justify-between
+        bg-pastel-green
+        md:flex-row
+        text-center
+        pt-20
+      "
+    >
+      <div class="flex-none">
+        <h1 class="text-5xl font-['Fredoka_One'] pb-4">
+          Hi, I'm <span class="underline">Oisín</span>.
+        </h1>
+        <h2 class="text-lg mr-auto ml-auto max-w-1/2">
+          software engineer. javascript defender.
+        </h2>
+      </div>
+      <picture class="max-h-96">
+        <source srcset="img/me.webp" type="image/webp" />
+        <source srcset="img/me.png" type="image/png" />
+        <img
+          src="img/me.jpg"
+          class="max-h-96"
+          alt="A picture of me, Oisín Quinn."
+        />
+      </picture>
+    </div>
+
+    <!-- Pink info section -->
+    <div class="bg-pastel-pink p-6">
+      <h3 class="hidden">About me</h3>
+      <img class="ml-auto mr-auto" src="img/ablobwave.gif" width="50px" />
+      <div class="p-4">
+        <p>
+          Hiya! My name is Oisín Quinn and I’m a front-end software engineer out
+          in the countryside of Ireland.
+        </p>
+        <p>
+          I currently work remotely for HubSpot, where I build things™️ in React
+          and TypeScript. I love building things and have an interest in design
+          – even if I’m not the best at it.
+        </p>
+      </div>
+      <img
+        src="img/me-pink.jpeg"
+        class="max-h-96"
+        alt="A picture of me, Oisín Quinn."
+      />
+    </div>
+
+    <!-- Yellow projects section -->
+    <div class="bg-pastel-yellow p-4">
+      <h3 class="text-4xl font-bold text-center pb-4">
+        Some things I've done...
+      </h3>
+      <h5 class="underline font-bold text-lg pb-2">dBikes Planner</h5>
+      <img
+        src="img/dbikes planner.png"
+        class="pb-2"
+        alt="Screenshot of my dBikes Planner app, showing a map view displaying how many bikes are available at each bike-sharing station"
+      />
+      <p>
+        This project was a journey planning system for the dublinbikes bike
+        sharing system. It used some funky machine learning to predict
+        availability at a station whenever you reached a station in your
+        journey. Built in Python with an Android app. Learn more on my blog
+        here.
+      </p>
+    </div>
+
+    <!-- Blue music section -->
+    <div class="bg-pastel-blue p-4">
+      <h3 class="text-4xl font-bold text-center pb-4">
+        I'm currently listening to...
+      </h3>
+
+      <div class="overflow-auto whitespace-nowrap fade-out-gradient">
+        <!-- An album -->
+        <div
+          class="w-40 text-center inline-block px-2 align-top whitespace-normal"
+        >
+          <img src="img/genesis owusu.jpg" />
+          <h5 class="font-bold whitespace-normal">Smiling with No Teeth</h5>
+          <p>Genesis Owusu</p>
+        </div>
+
+        <!-- An album -->
+        <div
+          class="w-40 text-center inline-block px-2 align-top whitespace-normal"
+        >
+          <img src="img/genesis owusu.jpg" />
+          <h5 class="font-bold whitespace-normal">Smiling with No Teeth</h5>
+          <p>Genesis Owusu</p>
+        </div>
+
+        <!-- An album -->
+        <div
+          class="w-40 text-center inline-block px-2 align-top whitespace-normal"
+        >
+          <img src="img/genesis owusu.jpg" />
+          <h5 class="font-bold">
+            Smiling with No Teeth Baby Lets Go Ahahahahaha
+          </h5>
+          <p>Genesis Owusu has a very long name</p>
+        </div>
+
+        <!-- An album -->
+        <div
+          class="w-40 text-center inline-block px-2 align-top whitespace-normal"
+        >
+          <img src="img/genesis owusu.jpg" />
+          <h5 class="font-bold whitespace-normal">Smiling with No Teeth</h5>
+          <p>Genesis Owusu</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pink socials section -->
+    <div class="bg-pastel-pink p-4">
+      <h3 class="text-3xl font-bold text-center pb-4">
+        Thanks for stopping by!
+      </h3>
+      <h3 class="text-3xl font-bold text-center pb-4">You can find me on:</h3>
+      <ul class="list-disc p-4">
+        <li>
+          <a href="https://twitter.com/oisinq_" class="underline">Twitter</a>
+          (infrequent thoughts about tech and music)
+        </li>
+        <li>
+          <a href="https://github.com/oisinq" class="underline">GitHub</a>
+          (infrequent commits)
+        </li>
+        <li>
+          <a href="https://timeline.oisin.io" class="underline">Polywork</a>
+          (timeline of cool things I've been up to)
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/oisinq" class="underline"
+            >LinkedIn</a
+          >
+          (I barely use this – leave a message in your request if you’re
+          connecting!)
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
