@@ -14,7 +14,7 @@ module.exports = {
       },
       fontFamily: {
         h1: ["Fredoka One", ...defaultTheme.fontFamily.sans],
-        sans: ["Source_Sans_Pro", ...defaultTheme.fontFamily.sans],
+        sans: ["Source Sans Pro", ...defaultTheme.fontFamily.sans],
       },
       maxWidth: {
         "1/4": "25%",
