@@ -1,2 +1,4 @@
-[build]
+[context.deploy-preview]
   base = "v2/"
+  command = "echo 'uwu'"
+  publish = "v2/"
