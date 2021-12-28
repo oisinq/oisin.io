@@ -21,3 +21,11 @@
   background-size: 30px 100%, 30px 100%, 15px 100%, 15px 100%;
   background-attachment: local, local, scroll, scroll;
 }
+
+@layer base {
+  @font-face {
+    font-family: Fredoka One;
+    font-weight: 800;
+    src: url(../fonts/fredoka.ttf);
+  }
+}

@@ -13,6 +13,7 @@ module.exports = {
         "custom-grey": "#3A3A3A",
       },
       fontFamily: {
+        h1: ["Fredoka One", ...defaultTheme.fontFamily.sans],
         sans: ["Source_Sans_Pro", ...defaultTheme.fontFamily.sans],
       },
       maxWidth: {

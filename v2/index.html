@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link ref="stylesheet" href="styles.css"/>
+    <!--
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
@@ -19,6 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet" media="print" onload="this.media='all'"/>
     </noscript>
+     -->
     <link rel="stylesheet" href="./dist/output.css"/>
     <title>Oisín Quinn</title>
   </head>
@@ -36,7 +38,7 @@
       "
     >
       <div class="flex-none">
-        <h1 class="text-5xl font-['Fredoka_One'] pb-4">
+        <h1 class="text-5xl font-h1 pb-4 font-black">
           Hi, I'm <span class="underline">Oisín</span>.
         </h1>
         <h2 class="text-lg mr-auto ml-auto max-w-1/2">
@@ -44,11 +46,14 @@
         </h2>
       </div>
       <picture class="max-h-96">
-        <source srcset="img/me.webp" type="image/webp"/>
-        <source srcset="img/me.png" type="image/png"/>
+        <source srcset="img/me.webp" 
+          width="100%" type="image/webp"/>
+        <source srcset="img/me.png"  
+          width="100%" type="image/png"/>
         <img
           src="img/me.jpg"
           class="max-h-96"
+          width="100%"
           alt="A picture of me, Oisín Quinn."
 />
       </picture>
