@@ -572,6 +572,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 700;
 }
 
+.font-black {
+  font-weight: 900;
+}
+
 .text-custom-grey {
   --tw-text-opacity: 1;
   color: rgb(58 58 58 / var(--tw-text-opacity));
