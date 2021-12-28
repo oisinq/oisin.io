@@ -9,16 +9,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
-     rel="preload"
-     as="style"
-    href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap"/>
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap"/>
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swapp"
       rel="stylesheet"/>
     <noscript>
       <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet" media="print" onload="this.media='all'"/>
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet"
+        media="print"
+        onload="this.media='all'"/>
     </noscript>
     <link rel="stylesheet" href="./dist/output.css"/>
     <title>Oisín Quinn</title>
@@ -26,16 +28,7 @@
   <body class="h-full">
     <!-- Green hero section -->
     <div
-      class="
-        flex flex-col
-        md:flex-row md:items-end
-        justify-between
-        bg-pastel-green
-        md:flex-row
-        text-center
-        pt-20
-      "
-    >
+      class="flex flex-col md:flex-row md:items-end justify-between bg-pastel-green md:flex-row text-center pt-20">
       <div class="flex-none">
         <h1 class="text-5xl font-h1 pb-4 font-black">
           Hi, I'm <span class="underline">Oisín</span>.
@@ -45,16 +38,13 @@
         </h2>
       </div>
       <picture class="max-h-96">
-        <source srcset="img/me.webp" 
-          width="100%" type="image/webp"/>
-        <source srcset="img/me.png"  
-          width="100%" type="image/png"/>
+        <source srcset="img/me.webp" type="image/webp"/>
+        <source srcset="img/me.png" type="image/png"/>
         <img
-          src="img/me.jpg"
-          class="max-h-96"
+          src="img/me.png"
           width="100%"
-          alt="A picture of me, Oisín Quinn."
-/>
+          class="max-h-96 aspect-[1200/857]"
+          alt="A picture of me, Oisín Quinn."/>
       </picture>
     </div>
 
@@ -76,28 +66,25 @@
       <img
         src="img/me-pink.jpeg"
         class="max-h-96"
-        alt="A picture of me, Oisín Quinn."
-/>
+        alt="A picture of me, Oisín Quinn."/>
     </div>
 
     <!-- Yellow projects section -->
     <div class="bg-pastel-yellow p-4">
-      <h3 class="text-4xl font-bold text-center pb-4">
-        Some things I've done...
-      </h3>
-      <h5 class="underline font-bold text-lg pb-2">dBikes Planner</h5>
-      <img
-        src="img/dbikes planner.png"
-        class="pb-2"
-        alt="Screenshot of my dBikes Planner app, showing a map view displaying how many bikes are available at each bike-sharing station"
-/>
-      <p>
-        This project was a journey planning system for the dublinbikes bike
-        sharing system. It used some funky machine learning to predict
-        availability at a station whenever you reached a station in your
-        journey. Built in Python with an Android app. Learn more on my blog
-        here.
-      </p>
+      <h3 class="text-4xl font-bold text-center pb-4">Some things I've made</h3>
+      <div class="flex flex-wrap">
+        <div class="w-full sm:w-1/2 md:w-1/3 m-2">
+          <h5 class="font-bold text-2xl pb-2">dBikes Planner</h5>
+          <img
+            src="img/dbikes planner.png"
+            class="pb-2"
+            alt="Screenshot of my dBikes Planner app, showing a map view displaying how many bikes are available at each bike-sharing station"/>
+          <p>
+            A journey planning system for the dublinbikes bike sharing scheme
+          </p>
+          <a class="underline font-semibold">Learn more</a>
+        </div>
+      </div>
     </div>
 
     <!-- Blue music section -->
@@ -108,9 +95,9 @@
 
       <div class="overflow-auto whitespace-nowrap fade-out-gradient">
         <!-- An album -->
+
         <div
-          class="w-40 text-center inline-block px-2 align-top whitespace-normal"
-        >
+          class="w-40 text-center inline-block px-2 align-top whitespace-normal">
           <img src="img/genesis owusu.jpg"/>
           <h5 class="font-bold whitespace-normal">Smiling with No Teeth</h5>
           <p>Genesis Owusu</p>
@@ -118,8 +105,7 @@
 
         <!-- An album -->
         <div
-          class="w-40 text-center inline-block px-2 align-top whitespace-normal"
-        >
+          class="w-40 text-center inline-block px-2 align-top whitespace-normal">
           <img src="img/genesis owusu.jpg"/>
           <h5 class="font-bold whitespace-normal">Smiling with No Teeth</h5>
           <p>Genesis Owusu</p>
@@ -127,8 +113,7 @@
 
         <!-- An album -->
         <div
-          class="w-40 text-center inline-block px-2 align-top whitespace-normal"
-        >
+          class="w-40 text-center inline-block px-2 align-top whitespace-normal">
           <img src="img/genesis owusu.jpg"/>
           <h5 class="font-bold">
             Smiling with No Teeth Baby Lets Go Ahahahahaha
@@ -138,8 +123,7 @@
 
         <!-- An album -->
         <div
-          class="w-40 text-center inline-block px-2 align-top whitespace-normal"
-        >
+          class="w-40 text-center inline-block px-2 align-top whitespace-normal">
           <img src="img/genesis owusu.jpg"/>
           <h5 class="font-bold whitespace-normal">Smiling with No Teeth</h5>
           <p>Genesis Owusu</p>
@@ -159,8 +143,7 @@
             <img
               src="img/social/twitter.svg"
               alt="Twitter logo"
-              class="inline-block pr-1"
-/>
+              class="inline-block pr-1"/>
             <span class="underline">Twitter</span>
           </a>
           (infrequent thoughts about tech and music)
@@ -170,8 +153,7 @@
             <img
               src="img/social/github.svg"
               alt="Twitter logo"
-              class="inline-block pr-1"
-/>
+              class="inline-block pr-1"/>
             <span class="underline">GitHub</span>
           </a>
           (infrequent commits)
@@ -181,8 +163,7 @@
             <img
               src="img/social/polywork.svg"
               alt="Twitter logo"
-              class="inline-block pr-1"
-/>
+              class="inline-block pr-1"/>
             <span class="underline">Polywork</span>
           </a>
           (timeline of cool things I've been up to)
@@ -192,8 +173,7 @@
             <img
               src="img/social/linkedin.svg"
               alt="Twitter logo"
-              class="inline-block pr-1"
-/>
+              class="inline-block pr-1"/>
             <span class="underline">LinkedIn</span>
           </a>
           (I barely use this – leave a message in your request if you’re
