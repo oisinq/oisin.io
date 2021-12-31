@@ -5,5 +5,9 @@ _site/
 */.DS_Store
 .DS_Store
 
-# Local Netlify folder
 .netlify
+/v2/.netlify
+/v2/node_modules/
+/v2/package-lock.json
+/v2/dist/*
+v2/dist/output.css
