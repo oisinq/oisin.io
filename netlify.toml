@@ -1,8 +1,8 @@
 [build]
   base = "v2/"
   publish = "v2/_site"
-  command = "npx tailwindcss -i ./css/index.css -o ./dist/output.css --minify && DEBUG=* eleventy"
+  command = "npx tailwindcss -i css/index.css -o dist/output.css --minify && DEBUG=* eleventy"
 [context.deploy-preview]
   base = "v2/"
   publish = "v2/_site"
-  command = "npx tailwindcss -i ./css/index.css -o ./dist/output.css --minify && DEBUG=* eleventy"
+  command = "npx tailwindcss -i css/index.css -o dist/output.css --minify && DEBUG=* eleventy"
