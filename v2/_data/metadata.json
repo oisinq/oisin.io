@@ -1,0 +1,21 @@
+{
+  "title": "Oisín Quinn",
+  "url": "https://oisin.io/",
+  "language": "en",
+  "description": "My personal website and blog.",
+  "feed": {
+    "subtitle": "My personal website and blog.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://oisin.io/"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://oisin.io/feed/feed.json"
+  },
+  "author": {
+    "name": "Oisín Quinn",
+    "email": "me@oisin.io",
+    "url": "https://oisin.io"
+  }
+}

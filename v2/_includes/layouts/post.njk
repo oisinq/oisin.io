@@ -1,0 +1,28 @@
+---
+layout: layouts/blog.njk
+---
+
+{% include "postTitle.njk" %}
+
+<article class="prose lg:prose-xl max-w-none">
+  {{ content | safe }}
+</article>
+
+<hr class="my-6" />
+
+
+
+<footer class="prose lg:prose-xl max-w-none pb-4">
+  👋 Hey, I hope you enjoyed this post! If you did, you can <a href="https://twitter.com/oisinq_"> follow me on Twitter</a> or visit this site's <a href="{{ '/' | url }}">homepage</a> to learn more about me.
+
+  {%- if collections.posts %}
+    <ul>
+      <h4>Some recent posts</h4>
+      {% for post in collections.posts | head(-3) | reverse %}
+      <li>
+        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  {%- endif %}
+</footer>

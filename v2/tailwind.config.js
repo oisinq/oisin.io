@@ -1,7 +1,7 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  content: ["*.{html,js}"],
+  content: ["_site/**/*.{html, njk}"],
   theme: {
     extend: {
       colors: {
@@ -20,8 +20,9 @@ module.exports = {
         "1/4": "25%",
         "1/2": "50%",
         "3/4": "75%",
+        prose: "42rem",
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };

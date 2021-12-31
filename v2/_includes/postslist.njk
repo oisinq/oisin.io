@@ -1,0 +1,19 @@
+<ol>
+{% for post in postslist | reverse %}
+  <article class="post pb-8">
+    {% set title = post.data.title %}
+    {% set page = post.data.page %}
+    {% set tags = post.data.tags %}
+    {% set headerLink = true %}
+    {% include "postTitle.njk" %}
+    <div class="prose lg:prose-xl max-w-none">
+      {% if post.data.description %}
+        {{ post.data.description }}
+      {% else %}
+        {% excerpt post %}
+      {% endif %}
+    </div>
+
+  </article>
+  {% endfor %}
+</ol>
