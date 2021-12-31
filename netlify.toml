@@ -1,2 +1,4 @@
+[build]
+  base = "v2/"
 [context.deploy-preview]
   base = "v2/"
