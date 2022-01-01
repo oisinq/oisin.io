@@ -9,11 +9,9 @@ eleventyNavigation:
 
 <!-- Green hero section -->
 <div class="bg-pastel-green">
-  <span class="absolute top-0 right-0 p-4">
-    <a class="text-2xl underline" href="{{ '/b/' | url }}">Blog</a>
-  </span>
   <div
     class="
+      relative
       flex flex-col
       md:flex-row md:items-center
       justify-between
@@ -23,6 +21,9 @@ eleventyNavigation:
       max-w-5xl
       px-8
     ">
+    <span class="absolute top-0 right-0 p-4">
+      <a class="text-2xl underline" href="{{ '/b/' | url }}">Blog</a>
+    </span>
     <div class="flex-none md:pb-8">
       <h1 class="text-5xl font-h1 pb-4 font-black">
         Hi, I'm <span class="underline">Oisín</span>.
