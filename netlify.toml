@@ -5,4 +5,4 @@
 [context.deploy-preview]
   base = "v2/"
   publish = "v2/_site"
-  command = "npx tailwindcss -i css/index.css -o dist/output.css && DEBUG=* eleventy"
+  command = "DEBUG=* eleventy && npx tailwindcss -i css/index.css -o _site/dist/output.css --minify"
