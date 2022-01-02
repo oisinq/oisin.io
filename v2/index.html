@@ -8,7 +8,7 @@ eleventyNavigation:
 ---
 
 <!-- Green hero section -->
-<div class="bg-pastel-green">
+<div class="bg-gradient-to-b from-pastel-green-500 to-pastel-green-600">
   <div
     class="
       relative
@@ -16,6 +16,7 @@ eleventyNavigation:
       md:flex-row md:items-center
       justify-between
       text-center
+      md:text-left
       pt-20
       mx-auto
       max-w-5xl
@@ -46,35 +47,48 @@ eleventyNavigation:
     <img class="ml-auto mr-auto pb-4" src="img/ablobwave.gif" width="50px" />
     <div class="p-4">
       <p class="pb-2">
-        Hiya! I'm Oisín Quinn. I’m a front-end software engineer living out in
-        the countryside of Cavan, Ireland. I currently work remotely for
-        <a class="underline font-semibold" href="https://www.hubspot.com/"
+        Hi! I'm Oisín Quinn. I’m a front-end software engineer living out in the
+        countryside of Cavan in rural Ireland. I currently work remotely for
+        <a
+          class="underline font-semibold"
+          href="https://www.hubspot.com/"
+          target="_blank"
           >HubSpot</a
-        >, where I build things™ in React and TypeScript.
+        >, where I build various things™ in React and TypeScript.
       </p>
       <img
         src="img/me-pink.jpeg"
-        class="h-full md:max-w-1/2 md:float-left md:p-4 md:pl-0"
+        class="h-full md:max-w-1/2 md:float-left pb-4 md:p-4 md:pl-0"
         alt="A picture of me, Oisín Quinn." />
       <p class="pb-2">
-        I've tried my hand and most kinds of software development, but the web
-        is where it all started. As a kid, I was obsessed with
-        <a href="https://en.wikipedia.org/wiki/Club_Penguin">Club Penguin</a>
-        and spent my spare time creating my own Club Penguin fan blogs. Not to
-        sound too cliché but those days really opened my eyes to the unlimited
-        posibilities of what can be done on the web.
+        I've tried my hand at a lot of different tech over the past few years,
+        but I'm a big fan of JavaScript and front-end software development
+        (especially React). I grew up as a kid always on the internet, writing
+        blog posts about all the latest
+        <a
+          class="underline font-semibold"
+          href="https://en.wikipedia.org/wiki/Club_Penguin"
+          target="_blank"
+          >Club Penguin</a
+        >
+        tips and tricks and tweeting way before I should've been. I was amazed
+        at how easy it was to create something as complex as a website, and
+        easily build something that people could start using straight-away.
       </p>
       <p class="pb-2">
-        Since then, I've grown a bit taller, added some facial hair and
-        completed a computer science degree. I've finally got the skills to turn
-        my ideas into something that I can actually use, which is a really great
-        feeling!
+        Since then, I've grown a lot taller, grown a beard and completed a
+        computer science degree. I've finally got the skills to turn my ideas
+        into something that people can actually use, which is a really
+        liberating feeling! In the past two years I've fallen in love with web
+        development again – there's just something so cool about building
+        software that can run in the web browser of billions of devices
+        worldwide. Also I just think JavaScript is the best (sorry).
       </p>
       <p class="pb-2">
-        Since then, I've grown a bit taller, added some facial hair and
-        completed a computer science degree. I've finally got the skills to turn
-        my ideas into something that I can actually use, which is a really great
-        feeling!
+        I also love music! I listen to a lot of it, sometimes write about it and
+        once had a student radio show talking about it. I'm really interested in
+        the overlap between music and tech, which is something I really want to
+        play with more in the future.
       </p>
       <p class="clear-left invisible h-0">.</p>
     </div>
@@ -82,9 +96,11 @@ eleventyNavigation:
 </div>
 
 <!-- Yellow projects section -->
-<div class="bg-pastel-yellow p-4">
+<div class="bg-gradient-to-r from-pastel-yellow-500 to-pastel-yellow-600 p-4">
   <div class="max-w-4xl mx-auto">
-    <h3 class="text-4xl font-bold text-center pb-4">Some things I've made</h3>
+    <h3 class="text-4xl font-bold text-center md:text-left pb-4">
+      Some things I've made
+    </h3>
     <div class="flex flex-wrap">
       {%- for project in collections.project | reverse -%}
       <div class="w-full sm:w-1/2 md:w-1/3 flex-auto p-2">
@@ -117,17 +133,25 @@ eleventyNavigation:
 </div>
 
 <!-- Blue music section -->
-<div class="bg-pastel-blue p-4">
+<div class="bg-gradient-to-b from-pastel-blue-400 to-pastel-blue-500 p-4">
   <div class="max-w-4xl mx-auto">
-    <h3 class="text-4xl font-bold text-center pb-4">
+    <h3 class="text-4xl font-bold text-center md:text-left pb-4">
       This week I'm listening to...
     </h3>
 
-    <div class="overflow-auto whitespace-nowrap fade-out-gradient">
+    <div class="overflow-auto whitespace-nowrap">
       <!-- An album -->
       {% for album in lastfm %}
       <div
-        class="w-40 text-center inline-block px-2 align-top whitespace-normal">
+        class="
+          w-40
+          text-center
+          md:text-left
+          inline-block
+          px-2
+          align-top
+          whitespace-normal
+        ">
         <a href="{{ album.url }}">
           <img src="{{ album.imageSrc }}" alt="{{ album.alt }}" />
           <h5 class="font-bold whitespace-normal">{{ album.title }}</h5>
@@ -138,7 +162,7 @@ eleventyNavigation:
     </div>
 
     <p class="pt-4">
-      You can follow me on
+      If you like what you see, follow me on
       <a
         class="underline font-semibold"
         href="https://open.spotify.com/user/1171185445"
@@ -155,12 +179,12 @@ eleventyNavigation:
 </div>
 
 <!-- Pink socials section -->
-<div class="bg-pastel-pink p-4">
+<div class="bg-pastel-pink p-4 pb-8">
   <div class="max-w-4xl mx-auto">
-    <h3 class="text-4xl font-bold text-center pb-4">
+    <h3 class="text-4xl font-bold text-center md:text-left pb-4">
       Thanks for stopping by! You can find me on:
     </h3>
-    <ul class="p-4">
+    <ul class="px-4">
       <li class="pb-2">
         <a href="https://twitter.com/oisinq_">
           <img

@@ -3,6 +3,11 @@ module.exports = async function () {
 
   const lastfmApiKey = process.env.LASTFM_API_KEY;
 
+  if (!lastfmApiKey) {
+    console.warn("You need to supply a lastfm API key to fetch album info.");
+    return [];
+  }
+
   // GitHub API: https://developer.github.com/v3/repos/#get
   return fetch(
     `https://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=oisin1001&api_key=${lastfmApiKey}&format=json&period=7day&limit=7`

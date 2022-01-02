@@ -5,7 +5,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "pastel-green": "#DDE9CD",
+        "pastel-green": {
+          DEFAULT: "#DDE9CD",
+          50: "#FFFFFF",
+          100: "#FFFFFF",
+          200: "#FFFFFF",
+          300: "#FFFFFF",
+          400: "#F0F5E9",
+          500: "#DDE9CD",
+          600: "#C3D8A6",
+          700: "#A8C77F",
+          800: "#8EB658",
+          900: "#719441",
+        },
         "pastel-pink": "#F9D6D6",
         "pastel-yellow": "#FFFEDB",
         "pastel-blue": "#C7FFFC",
