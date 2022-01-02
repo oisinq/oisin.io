@@ -3,6 +3,7 @@ const fs = require("fs");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
+const Image = require("@11ty/eleventy-img");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const striptags = require("striptags");
@@ -143,6 +144,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addShortcode("excerpt", (article) => extractExcerpt(article));
 
+  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
+
   return {
     // Control which files Eleventy will process
     // e.g.: *.md, *.njk, *.html, *.liquid
@@ -201,4 +204,22 @@ function extractExcerpt(article) {
     .trim()
     .concat("...");
   return excerpt;
+}
+
+async function imageShortcode(src, alt, sizes = "100vw", classes = "") {
+  let metadata = await Image(src, {
+    widths: [50, 300, 600],
+    formats: ["webp", "jpeg"],
+    outputDir: "./_site/img/",
+  });
+
+  let imageAttributes = {
+    alt,
+    sizes,
+    loading: "lazy",
+    decoding: "async",
+    class: classes,
+  };
+
+  return Image.generateHTML(metadata, imageAttributes);
 }

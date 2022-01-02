@@ -33,9 +33,19 @@ eleventyNavigation:
       <h2 class="text-lg mr-auto ml-auto">javascript defender.</h2>
     </div>
     <picture>
-      <source srcset="img/me.webp" type="image/webp" />
-      <source srcset="img/me.png" type="image/png" />
-      <img src="img/me.png" width="100%" alt="A picture of me, Oisín Quinn." />
+      <source
+        media="(max-width: 768px)"
+        srcset="img/me.webp 4x, img/me-600.webp 2x, img/me-300.webp 1x"
+        type="image/webp" />
+      <source srcset="img/me.webp 1200w" type="image/webp" />
+      <source srcset="img/me-1200.png 1200w" type="image/png" />
+      <source srcset="img/me-600.png 600w" type="image/png" />
+      <source srcset="img/me-300.png 300w" type="image/png" />
+      <source srcset="img/me-600.png" type="image/png" />
+      <img
+        src="img/me-600.png"
+        width="100%"
+        alt="A picture of me, Oisín Quinn." />
     </picture>
   </div>
 </div>
@@ -44,7 +54,11 @@ eleventyNavigation:
 <div class="bg-pastel-pink p-6">
   <div class="max-w-4xl mx-auto">
     <h3 class="hidden">About me</h3>
-    <img class="ml-auto mr-auto pb-4" src="img/ablobwave.gif" width="50px" />
+    <img
+      class="ml-auto mr-auto pb-4"
+      src="img/ablobwave.gif"
+      alt="An animated gif of a yellow blob waving at you."
+      width="50px" />
     <div class="p-4">
       <p class="pb-2">
         Hi! I'm Oisín Quinn. I’m a front-end software engineer living out in the
@@ -53,13 +67,13 @@ eleventyNavigation:
           class="underline font-semibold"
           href="https://www.hubspot.com/"
           target="_blank"
+          rel="noreferrer"
           >HubSpot</a
         >, where I build various things™ in React and TypeScript.
       </p>
-      <img
-        src="img/me-pink.jpeg"
-        class="h-full md:max-w-1/2 md:float-left pb-4 md:p-4 md:pl-0"
-        alt="A picture of me, Oisín Quinn." />
+      {% image "img/me-pink.jpeg", "A picture of me, Oisín Quinn, speaking at a
+      tech conference.", "100vh", "h-full md:max-w-1/2 md:float-left pb-4 md:p-4
+      md:pl-0" %}
       <p class="pb-2">
         I've tried my hand at a lot of different tech over the past few years,
         but I'm a big fan of JavaScript and front-end software development
@@ -69,6 +83,7 @@ eleventyNavigation:
           class="underline font-semibold"
           href="https://en.wikipedia.org/wiki/Club_Penguin"
           target="_blank"
+          rel="noreferrer"
           >Club Penguin</a
         >
         tips and tricks and tweeting way before I should've been. I was amazed
@@ -111,18 +126,16 @@ eleventyNavigation:
             bg-white
             shadow-xl
           ">
-          <img
-            src="{{ project.data.imgSrc }}"
-            class="pb-2 object-cover h-60 w-full rounded-t-2xl"
-            alt="{{ project.data.imgAlt }}" />
+          {% image project.data.imgSrc, project.data.imgAlt, "420px", "pb-2
+          object-cover h-60 w-full rounded-t-2xl" %}
 
           <div class="p-4">
-            <h5 class="font-bold text-2xl pb-2">{{ project.data.title }}</h5>
+            <h4 class="font-bold text-2xl pb-2">{{ project.data.title }}</h4>
             <p class="pb-1">{{ project.data.description }}</p>
             <a
               class="underline font-semibold pb-1"
               href="{{ project.data.learnMore }}"
-              >Learn more</a
+              >{{ project.data.cta }}</a
             >
           </div>
         </div>
@@ -153,8 +166,8 @@ eleventyNavigation:
           whitespace-normal
         ">
         <a href="{{ album.url }}">
-          <img src="{{ album.imageSrc }}" alt="{{ album.alt }}" />
-          <h5 class="font-bold whitespace-normal">{{ album.title }}</h5>
+          {% image album.imageSrc, album.alt, "100vh" %}
+          <h4 class="font-bold whitespace-normal">{{ album.title }}</h4>
           <p>{{ album.artist }}</p>
         </a>
       </div>
@@ -199,7 +212,7 @@ eleventyNavigation:
         <a href="https://github.com/oisinq">
           <img
             src="img/social/github.svg"
-            alt="Twitter logo"
+            alt="GitHub logo"
             class="inline-block pr-1" />
           <span class="underline">GitHub</span>
         </a>
@@ -209,7 +222,7 @@ eleventyNavigation:
         <a href="https://timeline.oisin.io">
           <img
             src="img/social/polywork.svg"
-            alt="Twitter logo"
+            alt="Polywork logo"
             class="inline-block pr-1" />
           <span class="underline">Polywork</span>
         </a>
@@ -219,7 +232,7 @@ eleventyNavigation:
         <a href="https://linkedin.com/in/oisinq">
           <img
             src="img/social/linkedin.svg"
-            alt="Twitter logo"
+            alt="LinkedIn logo"
             class="inline-block pr-1" />
           <span class="underline">LinkedIn</span>
         </a>
