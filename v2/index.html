@@ -27,10 +27,13 @@ eleventyNavigation:
     </span>
     <div class="flex-none md:pb-8">
       <h1 class="text-5xl font-h1 pb-4 font-black">
-        Hi, I'm <span class="underline">Oisín</span>.
+        Hi, I'm
+        <span id="underlinedName" class="underline" tabindex="0">Oisín</span>.
       </h1>
-      <h2 class="text-lg mr-auto ml-auto">software engineer.</h2>
-      <h2 class="text-lg mr-auto ml-auto">javascript defender.</h2>
+      <h2 class="text-lg mr-auto ml-auto">
+        software engineer. <br class="md:hidden" />
+        javascript defender.
+      </h2>
     </div>
     <picture>
       <source
@@ -242,3 +245,27 @@ eleventyNavigation:
     </ul>
   </div>
 </div>
+
+<!-- Production -->
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script>
+  tippy("#underlinedName", {
+    content: `<span class="font-normal font-sans">
+        It's an Irish name! It's pronounced [ush-een].
+        <img alt="Speaker icon - click to hear an audio file of me pronouncing my name." class="inline-block pl-1" width="26" onclick="pronounceName()" tabindex="0" src="/img/audio.svg" />
+      </span>
+      <audio id="pronunciation-audio" src="/img/ush-een.mp3" preload="none">
+        Your browser does not support the <code>audio</code> element.
+      </audio>`,
+    interactive: true,
+    allowHTML: true,
+    delay: [0, 100000],
+    ignoreAttributes: true,
+  });
+
+  function pronounceName() {
+    var audio = document.getElementById("pronunciation-audio");
+    audio.play();
+  }
+</script>

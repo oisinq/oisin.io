@@ -11,3 +11,4 @@ _site/
 /v2/package-lock.json
 /v2/dist/*
 v2/dist/output.css
+.cache
