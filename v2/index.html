@@ -253,14 +253,13 @@ eleventyNavigation:
   tippy("#underlinedName", {
     content: `<span class="font-normal font-sans">
         It's an Irish name! It's pronounced [ush-een].
-        <img alt="Speaker icon - click to hear an audio file of me pronouncing my name." class="inline-block pl-1" width="26" onclick="pronounceName()" tabindex="0" src="/img/audio.svg" />
+        <img alt="Speaker icon - click to hear an audio file of me pronouncing my name." class="inline-block pl-1" width="26" onclick="pronounceName()" tabindex="0" role="link" onkeydown="pronounceName()" src="/img/audio.svg" />
       </span>
       <audio id="pronunciation-audio" src="/img/ush-een.mp3" preload="none">
         Your browser does not support the <code>audio</code> element.
       </audio>`,
     interactive: true,
     allowHTML: true,
-    delay: [0, 100000],
     ignoreAttributes: true,
   });
 
