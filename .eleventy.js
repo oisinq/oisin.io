@@ -208,7 +208,13 @@ function extractExcerpt(article) {
   return excerpt;
 }
 
-async function imageShortcode(src, alt, sizes = "100vw", classes = "") {
+async function imageShortcode(
+  src,
+  alt,
+  sizes = "100vw",
+  classes = "",
+  lazy = true
+) {
   let metadata = await Image(src, {
     widths: [50, 300, 600],
     formats: ["webp", "jpeg"],
@@ -218,7 +224,7 @@ async function imageShortcode(src, alt, sizes = "100vw", classes = "") {
   let imageAttributes = {
     alt,
     sizes,
-    loading: "lazy",
+    loading: lazy ? "lazy" : "eager",
     decoding: "async",
     class: classes,
   };

@@ -27,8 +27,4 @@
     src: url(../fonts/fredoka.woff2) format("woff2");
     font-display: block;
   }
-  /* 
-  a {
-    @apply underline text-blue-600 hover:text-blue-800 visited:text-purple-600;
-  } */
 }
