@@ -1,113 +1,270 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="description" content="Oisín Quinn's personal website" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link href="main.css" rel="stylesheet" />
+---
+layout: layouts/home.njk
+title: Oisín Quinn
+tags:
+  - nav
+eleventyNavigation:
+  key: Home
+---
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="public/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="public/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="public/favicon-16x16.png"
-    />
-    <link rel="manifest" href="public/site.webmanifest" />
-
-    <script src="triangles.js"></script>
-
-    <title>Oisín Quinn</title>
-  </head>
-
-  <body id="body">
-    <canvas id="canvas"></canvas>
-    <div id="cover">
-      <main role="main">
-        <h1>Oisín Quinn</h1>
-        <h2>
-          Software Engineer at
-          <a href="https://product.hubspot.com/blog">HubSpot</a>
-        </h2>
-        <p>Front-end engineer playing with React, TypeScript and JavaScript</p>
-        <p>
-          Producer &amp; host of
-          <a
-            href="https://open.spotify.com/show/2svlOsZFI3q36MaGnnmGyC"
-            class="link"
-            >Quinntessentials</a
-          >
-        </p>
-        <p>
-          Sometimes I write things on my <a href="./b/" class="link">blog</a>
-        </p>
-        <p>
-          See what I've been up to on my
-          <a href="https://timeline.oisin.io" class="link">timeline</a>
-        </p>
-        <br />
-        <a
-          href="https://github.com/oisinq"
-          rel="me"
-          aria-label="My GitHub profile"
-          ><i class="icon-github-squared"></i
-        ></a>
-        <a href="mailto:me@oisin.io"
-          ><i
-            class="icon-mail-squared"
-            aria-label="My personal email address"
-          ></i
-        ></a>
-        <a
-          href="https://twitter.com/oisinq_"
-          rel="me"
-          aria-label="My Twitter profile"
-          ><i class="icon-twitter-squared"></i
-        ></a>
-        <a
-          href="https://linkedin.com/in/oisinq"
-          rel="me"
-          aria-label="My LinkedIn profile"
-          ><i class="icon-linkedin-squared"></i
-        ></a>
-      </main>
+<!-- Green hero section -->
+<div class="bg-gradient-to-b from-pastel-green-500 to-pastel-green-600">
+  <div
+    class="
+      relative
+      flex flex-col
+      md:flex-row md:items-center
+      justify-between
+      text-center
+      md:text-left
+      pt-20
+      mx-auto
+      max-w-5xl
+      px-8
+    ">
+    <span class="absolute top-0 right-0 p-4">
+      <a class="text-2xl underline" href="{{ '/b/' | url }}">Blog</a>
+    </span>
+    <div class="flex-none md:pb-8">
+      <h1 class="text-5xl font-h1 pb-4 font-black">
+        Hi, I'm
+        <span id="underlinedName" class="underline" tabindex="0">Oisín</span>.
+      </h1>
+      <h2 class="text-lg mr-auto ml-auto">
+        software engineer. <br class="md:hidden" />
+        javascript defender.
+      </h2>
     </div>
-  </body>
-  <script>
-    var canvas = document.getElementById("canvas");
-    canvas.width = document.body.clientWidth;
-    canvas.height = document.body.clientHeight;
+    <picture>
+      <source
+        media="(max-width: 768px)"
+        srcset="img/me.webp 4x, img/me-600.webp 2x, img/me-300.webp 1x"
+        type="image/webp" />
+      <source srcset="img/me.webp 1200w" type="image/webp" />
+      <source srcset="img/me-1200.png 1200w" type="image/png" />
+      <source srcset="img/me-600.png 600w" type="image/png" />
+      <source srcset="img/me-300.png 300w" type="image/png" />
+      <source srcset="img/me-600.png" type="image/png" />
+      <img
+        src="img/me-600.png"
+        width="100%"
+        alt="A picture of me, Oisín Quinn." />
+    </picture>
+  </div>
+</div>
 
-    var altBG = document.getElementById("body");
-    var color = {
-      baseHue: Math.floor(Math.random() * Math.floor(360)),
-      baseSaturation: 100,
-      baseLightness: 25,
-    };
+<!-- Pink info section -->
+<div class="bg-pastel-pink p-6">
+  <div class="max-w-4xl mx-auto">
+    <h3 class="hidden">About me</h3>
+    <img
+      class="ml-auto mr-auto pb-4"
+      src="img/ablobwave.gif"
+      alt="An animated gif of a yellow blob waving at you."
+      width="50px" />
+    <div class="p-4">
+      <p class="pb-2">
+        Hi! I'm Oisín Quinn. I’m a front-end software engineer living out in the
+        countryside of Cavan in rural Ireland. I currently work remotely for
+        <a
+          class="underline font-semibold"
+          href="https://www.hubspot.com/"
+          target="_blank"
+          rel="noreferrer"
+          >HubSpot</a
+        >, where I build various things™ in React and TypeScript.
+      </p>
+      {% image "img/me-pink.jpeg", "A picture of me, Oisín Quinn, speaking at a
+      tech conference.", "100vh", "h-full md:max-w-1/2 md:float-left pb-4 md:p-4
+      md:pl-0" %}
+      <p class="pb-2">
+        I've tried my hand at a lot of different tech over the past few years,
+        but I'm a big fan of JavaScript and front-end software development
+        (especially React). I grew up as a kid always on the internet, writing
+        blog posts about all the latest
+        <a
+          class="underline font-semibold"
+          href="https://en.wikipedia.org/wiki/Club_Penguin"
+          target="_blank"
+          rel="noreferrer"
+          >Club Penguin</a
+        >
+        tips and tricks and tweeting way before I should've been. I was amazed
+        at how easy it was to create something as complex as a website, and
+        easily build something that people could start using straight-away.
+      </p>
+      <p class="pb-2">
+        Since then, I've grown a lot taller, grown a beard and completed a
+        computer science degree. I've finally got the skills to turn my ideas
+        into something that people can actually use, which is a really
+        liberating feeling! In the past two years I've fallen in love with web
+        development again – there's just something so cool about building
+        software that can run in the web browser of billions of devices
+        worldwide. Also I just think JavaScript is the best (sorry).
+      </p>
+      <p class="pb-2">
+        I also love music! I listen to a lot of it, sometimes write about it and
+        once had a student radio show talking about it. I'm really interested in
+        the overlap between music and tech, which is something I really want to
+        play with more in the future.
+      </p>
+      <p class="clear-left invisible h-0">.</p>
+    </div>
+  </div>
+</div>
 
-    var triangle = new TriangleBG({
-      canvas: canvas,
-      alternateElem: altBG,
-      cellHeight: 120,
-      cellWidth: 100,
-      mouseLight: true,
-      mouseLightRadius: 500,
-      mouseLightIncrement: 10,
-      resizeAdjustment: true,
-      baseColor1: color,
-    });
-  </script>
-</html>
+<!-- Yellow projects section -->
+<div class="bg-gradient-to-r from-pastel-yellow-500 to-pastel-yellow-600 p-4">
+  <div class="max-w-4xl mx-auto">
+    <h3 class="text-4xl font-bold text-center md:text-left pb-4">
+      Some things I've made
+    </h3>
+    <div class="flex flex-wrap">
+      {%- for project in collections.project | reverse -%}
+      <div class="w-full sm:w-1/2 md:w-1/3 flex-auto p-2">
+        <div
+          class="
+            border-solid border-2 border-light-blue-600
+            rounded-2xl
+            bg-white
+            shadow-xl
+          ">
+          {% image project.data.imgSrc, project.data.imgAlt, "420px", "pb-2
+          object-cover h-60 w-full rounded-t-2xl" %}
+
+          <div class="p-4">
+            <h4 class="font-bold text-2xl pb-2">{{ project.data.title }}</h4>
+            <p class="pb-1">{{ project.data.description }}</p>
+            <a
+              class="underline font-semibold pb-1"
+              href="{{ project.data.learnMore }}"
+              >{{ project.data.cta }}</a
+            >
+          </div>
+        </div>
+      </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+<!-- Blue music section -->
+<div class="bg-gradient-to-b from-pastel-blue-400 to-pastel-blue-500 p-4">
+  <div class="max-w-4xl mx-auto">
+    <h3 class="text-4xl font-bold text-center md:text-left pb-4">
+      This week I'm listening to...
+    </h3>
+
+    <div class="overflow-auto whitespace-nowrap">
+      <!-- An album -->
+      {% for album in lastfm %}
+      <div
+        class="
+          w-40
+          text-center
+          md:text-left
+          inline-block
+          px-2
+          align-top
+          whitespace-normal
+        ">
+        <a href="{{ album.url }}">
+          {% image album.imageSrc, album.alt, "100vh" %}
+          <h4 class="font-bold whitespace-normal">{{ album.title }}</h4>
+          <p>{{ album.artist }}</p>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+
+    <p class="pt-4">
+      If you like what you see, follow me on
+      <a
+        class="underline font-semibold"
+        href="https://open.spotify.com/user/1171185445"
+        >Spotify</a
+      >
+      or
+      <a
+        class="underline font-semibold"
+        href="https://www.last.fm/user/Oisin1001"
+        >Last.fm</a
+      >.
+    </p>
+  </div>
+</div>
+
+<!-- Pink socials section -->
+<div class="bg-pastel-pink p-4 pb-8">
+  <div class="max-w-4xl mx-auto">
+    <h3 class="text-4xl font-bold text-center md:text-left pb-4">
+      Thanks for stopping by! You can find me on:
+    </h3>
+    <ul class="px-4">
+      <li class="pb-2">
+        <a href="https://twitter.com/oisinq_">
+          <img
+            src="img/social/twitter.svg"
+            alt="Twitter logo"
+            class="inline-block pr-1" />
+          <span class="underline">Twitter</span>
+        </a>
+        (infrequent thoughts about tech and music)
+      </li>
+      <li class="pb-2">
+        <a href="https://github.com/oisinq">
+          <img
+            src="img/social/github.svg"
+            alt="GitHub logo"
+            class="inline-block pr-1" />
+          <span class="underline">GitHub</span>
+        </a>
+        (infrequent commits)
+      </li>
+      <li class="pb-2">
+        <a href="https://timeline.oisin.io">
+          <img
+            src="img/social/polywork.svg"
+            alt="Polywork logo"
+            class="inline-block pr-1" />
+          <span class="underline">Polywork</span>
+        </a>
+        (timeline of cool things I've been up to)
+      </li>
+      <li class="pb-2">
+        <a href="https://linkedin.com/in/oisinq">
+          <img
+            src="img/social/linkedin.svg"
+            alt="LinkedIn logo"
+            class="inline-block pr-1" />
+          <span class="underline">LinkedIn</span>
+        </a>
+        (I barely use this – leave a message in your request if you’re
+        connecting!)
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Production -->
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script>
+  tippy("#underlinedName", {
+    content: `<span class="font-normal font-sans">
+        It's an Irish name! It's pronounced [ush-een].
+        <img alt="Speaker icon - click to hear an audio file of me pronouncing my name." class="inline-block pl-1" width="26" onclick="pronounceName()" tabindex="0" role="link" onkeydown="pronounceName()" src="/img/audio.svg" />
+      </span>
+      <audio id="pronunciation-audio" src="/img/ush-een.mp3" preload="none">
+        Your browser does not support the <code>audio</code> element.
+      </audio>`,
+    interactive: true,
+    allowHTML: true,
+    ignoreAttributes: true,
+  });
+
+  function pronounceName() {
+    var audio = document.getElementById("pronunciation-audio");
+    audio.play();
+  }
+</script>
