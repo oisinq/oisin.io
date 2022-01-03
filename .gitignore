@@ -1,6 +1,7 @@
+node_modules/
 _site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-*/.DS_Store
+.netlify/
+.cache/
+.git
 .DS_Store
+*/.DS_Store

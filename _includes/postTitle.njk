@@ -1,0 +1,26 @@
+<header class="pb-4">
+  <h2 class="text-5xl font-bold pb-2">
+    {% if headerLink %}
+      <a href="{{ page.url | url}}">{{ title }}</a>
+    {% else %}
+      {{ title }}
+    {% endif %}
+  </h2>
+
+  <time
+    class="text-lg text-gray-400"
+    datetime="{{ page.date | htmlDateString }}"
+  >
+    {{ page.date | readableDate }}
+  </time>
+
+  {% if tags | filterTagList | length %}
+    Tags: 
+    <span>
+    {%- for tag in tags | filterTagList -%} 
+      {%- set tagUrl %}/b/tags/{{ tag | slug}}/{% endset -%}
+      <a href="{{ tagUrl | url }}" class="underline">{{ tag }}</a>
+    {%- endfor %} 
+    </span>
+  {% endif %}
+</header>
