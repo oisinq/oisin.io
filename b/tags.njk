@@ -6,7 +6,7 @@ layout: layouts/blog.njk
 
 <ul class="list-disc pl-6">
   {% for tag in collections.tagList %}
-    {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+    {% set tagUrl %}/b/tags/{{ tag | slug }}/{% endset %}
     <li>
       <a href="{{ tagUrl | url }}" class="underline">{{ tag }}</a>
     </li>
