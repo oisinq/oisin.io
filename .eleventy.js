@@ -208,17 +208,20 @@ function extractExcerpt(article) {
   return excerpt;
 }
 
-async function imageShortcode(
+async function imageShortcode({
   src,
   alt,
   sizes = "100vw",
   classes = "",
-  lazy = true
-) {
+  lazy = true,
+}) {
   let metadata = await Image(src, {
-    widths: [50, 300, 600],
+    widths: [50, 300, 600, null],
     formats: ["webp", "jpeg"],
     outputDir: "./_site/img/",
+    sharpOptions: {
+      animated: true,
+    },
   });
 
   let imageAttributes = {
