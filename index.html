@@ -24,9 +24,9 @@ eleventyNavigation:
         javascript defender.
       </h2>
     </div>
-    {% image src="img/me.webp", alt="A picture of me, Oisín Quinn.",
-    sizes="(max-width: 768px)", classes="aspect-[1200/857] w-[600px]",
-    lazy=false %}
+    {% image src="img/me.webp", alt="A picture of me, Oisín Quinn.", sizes="
+    (min-width: 1000px) 600px, (min-width: 768px) 50vw, 100vw",
+    classes="aspect-[1200/857] w-[600px]", lazy=false, fetchpriority="high" %}
   </div>
 </div>
 
@@ -34,12 +34,8 @@ eleventyNavigation:
 <div class="bg-pastel-pink p-6">
   <div class="max-w-4xl mx-auto">
     <h3 class="hidden">About me</h3>
-    <img
-      class="ml-auto mr-auto pb-4"
-      src="img/ablobwave.gif"
-      alt="An animated gif of a yellow blob waving at you."
-      height="66px"
-      width="50px" />
+    {% image src="img/ablobwave.gif", alt="An animated gif of a yellow blob
+    waving at you.", sizes="50px", classes="ml-auto mr-auto pb-4 w-[50px]" %}
     <div class="p-4">
       <p class="pb-2">
         Hi! I'm Oisín Quinn. I’m a front-end software engineer living out in the
@@ -53,8 +49,9 @@ eleventyNavigation:
         >, where I build various things™ in React and TypeScript.
       </p>
       {% image src="img/me-pink.jpeg", alt="A picture of me, Oisín Quinn,
-      speaking at a tech conference.", sizes="100vh", classes="h-full
-      md:max-w-1/2 md:float-left pb-4 md:p-4 md:pl-0", lazy=false %}
+      speaking at a tech conference.", sizes=" (min-width: 958px) 432px,
+      (min-width: 768px) 50vw, 100vw", classes="h-full md:max-w-1/2
+      md:float-left pb-4 md:p-4 md:pl-0", lazy=false %}
       <p class="pb-2">
         I've tried my hand at a lot of different tech over the past few years,
         but I'm a big fan of JavaScript and front-end software development
@@ -103,8 +100,8 @@ eleventyNavigation:
         <div
           class="border-solid border-2 border-light-blue-600 rounded-2xl bg-white shadow-xl">
           {% image src=project.data.imgSrc, alt=project.data.imgAlt,
-          sizes="420px", classes="pb-2 object-cover h-60 w-full rounded-t-2xl"
-          %}
+          sizes="(min-width: 640px) 50vh, 100vh", classes="pb-2 object-cover
+          h-60 w-full rounded-t-2xl" %}
 
           <div class="p-4">
             <h4 class="font-bold text-2xl pb-2">{{ project.data.title }}</h4>
@@ -135,7 +132,7 @@ eleventyNavigation:
       <div
         class="w-40 text-center md:text-left inline-block px-2 align-top whitespace-normal">
         <a href="{{ album.url }}">
-          {% image src=album.imageSrc, alt=album.alt, sizes="100vh" %}
+          {% image src=album.imageSrc, alt=album.alt, sizes="144px" %}
           <h4 class="font-bold whitespace-normal">{{ album.title }}</h4>
           <p>{{ album.artist }}</p>
         </a>
@@ -220,8 +217,8 @@ eleventyNavigation:
   </div>
 </div>
 
-<script src="https://unpkg.com/@popperjs/core@2"></script>
-<script src="https://unpkg.com/tippy.js@6"></script>
+<script src="https://unpkg.com/@popperjs/core@2" fetchpriority="low"></script>
+<script src="https://unpkg.com/tippy.js@6" fetchpriority="low"></script>
 <script>
   tippy("#underlinedName", {
     content: `<span class="font-normal font-sans">
