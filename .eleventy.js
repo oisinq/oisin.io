@@ -214,9 +214,10 @@ async function imageShortcode({
   sizes = "100vw",
   classes = "",
   lazy = true,
+  fetchpriority = "auto",
 }) {
   let metadata = await Image(src, {
-    widths: [50, 300, 600, null],
+    widths: [50, 150, 300, 600, 900, null],
     formats: ["webp", "jpeg"],
     outputDir: "./_site/img/",
     sharpOptions: {
@@ -230,6 +231,7 @@ async function imageShortcode({
     loading: lazy ? "lazy" : "eager",
     decoding: "async",
     class: classes,
+    fetchpriority,
   };
 
   return Image.generateHTML(metadata, imageAttributes);
