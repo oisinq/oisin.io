@@ -215,9 +215,10 @@ async function imageShortcode({
   classes = "",
   lazy = true,
   fetchpriority = "auto",
+  widths = [50, 150, 300, 600, 900, null],
 }) {
   let metadata = await Image(src, {
-    widths: [50, 150, 300, 600, 900, null],
+    widths,
     formats: ["webp", "jpeg"],
     outputDir: "./_site/img/",
     sharpOptions: {

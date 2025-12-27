@@ -23,6 +23,7 @@ eleventyNavigation:
     </div>
     {% image src="img/me-2025-bw.webp", alt="A picture of me, Oisín Quinn.",
     sizes="(min-width: 1200px) 350px, (min-width: 768px) 35vw, 85vw",
+    widths=[200, 320, 400, 500],
     classes="aspect-[677/800] w-full max-w-[350px] mx-auto", lazy=false,
     fetchpriority="high" %}
   </div>
@@ -231,21 +232,32 @@ eleventyNavigation:
   </div>
 </div>
 
-<script src="https://unpkg.com/@popperjs/core@2" fetchpriority="low"></script>
-<script src="https://unpkg.com/tippy.js@6" fetchpriority="low"></script>
+<script src="https://unpkg.com/@popperjs/core@2" fetchpriority="low" defer></script>
+<script src="https://unpkg.com/tippy.js@6" fetchpriority="low" defer></script>
 <script>
-  tippy("#underlinedName", {
-    content: `<span class="font-normal font-sans">
-        It's an Irish name! It's pronounced [ush-een].
-        <img alt="Speaker icon - click to hear an audio file of me pronouncing my name." class="inline-block pl-1" width="26" onclick="pronounceName()" tabindex="0" role="link" onkeydown="pronounceName()" src="/img/audio.svg" />
-      </span>
-      <audio id="pronunciation-audio" src="/img/ush-een.mp3" preload="none">
-        Your browser does not support the <code>audio</code> element.
-      </audio>`,
-    interactive: true,
-    allowHTML: true,
-    ignoreAttributes: true,
-  });
+  function initNameTooltip() {
+    if (!window.tippy || window.__nameTooltipInit) return;
+    window.__nameTooltipInit = true;
+
+    tippy("#underlinedName", {
+      content: `<span class="font-normal font-sans">
+          It's an Irish name! It's pronounced [ush-een].
+          <img alt="Speaker icon - click to hear an audio file of me pronouncing my name." class="inline-block pl-1" width="26" onclick="pronounceName()" tabindex="0" role="link" onkeydown="pronounceName()" src="/img/audio.svg" />
+        </span>
+        <audio id="pronunciation-audio" src="/img/ush-een.mp3" preload="none">
+          Your browser does not support the <code>audio</code> element.
+        </audio>`,
+      interactive: true,
+      allowHTML: true,
+      ignoreAttributes: true,
+    });
+  }
+
+  const tippyScript = document.querySelector('script[src*="tippy.js"]');
+  if (tippyScript) {
+    tippyScript.addEventListener("load", initNameTooltip);
+  }
+  window.addEventListener("load", initNameTooltip);
 
   console.log("hi, welcome to my website, have fun snooping around 😎");
 
