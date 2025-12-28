@@ -7,50 +7,57 @@ eleventyNavigation:
   key: Home
 ---
 
-<!-- Green hero section -->
-<div class="bg-gradient-to-b from-[#A1F6C6] to-[#CFFFE4]">
+<!-- Hero section -->
+<div class="bg-[#A1F6C6] relative overflow-hidden">
   <div
     class="relative flex flex-col md:flex-row md:items-center justify-around text-center md:text-left pt-20 mx-auto max-w-5xl px-8">
     <span class="absolute top-0 right-0 p-4">
       <a class="text-2xl underline" href="{{ '/b/' | url }}">Blog</a>
     </span>
-    <div class="flex-none md:pb-8">
+    <div class="flex-none md:pb-8 mb-16 md:mb-0 relative z-20">
       <h1 class="text-5xl font-h1 pb-4 text-custom-grey">
         Hi, I'm
         <button id="underlinedName" class="underline">Oisín</button> :)
       </h1>
       <h2 class="text-lg mr-auto ml-auto">nice to meet you!</h2>
     </div>
-    {% image src="img/me-2025-bw.webp", alt="A picture of me, Oisín Quinn.",
-    sizes="(min-width: 1200px) 350px, (min-width: 768px) 35vw, 85vw",
-    widths=[200, 320, 400, 500],
-    classes="aspect-[677/800] w-full max-w-[350px] mx-auto", lazy=false,
-    fetchpriority="high" %}
+    <div class="relative w-full max-w-[350px] mx-auto">
+      <span
+        aria-hidden="true"
+        class="absolute left-[53%] top-1/2 h-[95%] w-[105%] -translate-x-1/2 -translate-y-1/2 z-0 rotate-[50deg] rounded-3xl bg-[#F6C6A1]"></span>
+      {% image src="img/me-2025-bw.webp", alt="A picture of me, Oisín Quinn.",
+      sizes="(min-width: 1200px) 350px, (min-width: 768px) 35vw, 85vw",
+      widths=[200, 320, 400, 500], classes="aspect-[677/800] w-full relative
+      z-10", lazy=false, fetchpriority="high" %}
+    </div>
   </div>
 </div>
 
-<!-- Pink info section -->
-<div class="bg-[#F6A1D0] p-6">
+<!-- Info section -->
+<div class="bg-[#F6C6A1] pt-2 pl-6 pr-6">
   <div class="max-w-4xl mx-auto">
     <h3 class="hidden">About me</h3>
-    {% image src="img/ablobwave.webp", alt="An animated gif of a yellow blob
-    waving at you.", sizes="50px", classes="ml-auto mr-auto w-[50px] h-[50px]
-    aspect-square" %}
     <div class="p-4">
       {% image src="img/me-yellow-jumper.webp", alt="A picture of me, Oisín
       Quinn, speaking at a tech conference.", sizes=" (min-width: 958px) 432px,
       (min-width: 768px) 50vw, 100vw", classes="h-full md:max-w-1/2
       md:float-left pb-4 md:p-4 md:pl-0", lazy=false %}
-      <p class="pt-4 pb-2">
-        Hi! I'm Oisín Quinn. I’m a software engineer focused on building
-        front-ends on the web. I live in Dublin, Ireland but I'm originally from
-        <a
-          class="underline font-semibold"
-          href="./img/cavan-mentioned.png"
-          target="_blank"
-          rel="noreferrer"
-          >the lovely Cavan</a
-        >.
+      <p class="pt-4 pb-2 flex items-start gap-3">
+        {% image src="img/ablobwave.webp", alt="An animated gif of a yellow blob
+        waving at you.", sizes="40px", classes="w-[40px] h-[40px] flex-shrink-0
+        mt-1 aspect-square" %}
+        <span class="flex-1">
+          Hi! I'm Oisín Quinn. I’m a software engineer focused on building
+          front-ends on the web. I live in Dublin, Ireland but I'm originally
+          from
+          <a
+            class="underline font-semibold"
+            href="./img/cavan-mentioned.png"
+            target="_blank"
+            rel="noreferrer"
+            >the lovely Cavan</a
+          >.
+        </span>
       </p>
       <p class="pb-2">
         I currently work for
@@ -90,32 +97,34 @@ eleventyNavigation:
   </div>
 </div>
 
-<!-- Yellow projects section -->
-<div class="bg-[#A1A6F6] p-4">
+<!-- Projects section -->
+<div class="bg-[#F6C6A1] pt-0 pl-4 pr-4">
   <div class="max-w-4xl mx-auto pb-4">
-    <h3 class="text-3xl font-bold text-center md:text-left pb-4">
+    <h3 class="text-3xl text-center md:text-left pb-4">
       What I’ve been up to:
     </h3>
     <ul class="list-disc pl-6 space-y-2">
       <li>
-        I hosted a college radio show called Quinntessentials for three years.
-        This show aired weekly on Belfield FM and I uploaded most of these
-        episodes to Mixcloud. Some of these have been copyright-striked since
-        then, but I have an archive of all episodes here.
+        I hosted a <strong>college radio show</strong> called Quinntessentials
+        for three years. This show aired weekly on Belfield FM and I uploaded
+        most of these episodes to Mixcloud. Some of these have been
+        copyright-striked since then, but I have an archive of all episodes
+        here.
       </li>
       <li>
-        I co-organised a student-run tech conference called SISTEM for two
-        years. 2020’s edition featured 23 different events, 30+ speakers and had
-        200 attendees, raising over €1,500 for charity. It was the most
-        challenging and stressful thing I’ve ever done in my life, but also
-        probably the most rewarding! Learn more about it here.
+        I co-organised a <strong>student-run tech conference</strong> called
+        SISTEM for two years. 2020’s edition featured 23 different events, 30+
+        speakers and had 200 attendees, raising over €1,500 for charity. It was
+        the most challenging and stressful thing I’ve ever done in my life, but
+        also probably the most rewarding! Learn more about it here.
       </li>
       <li>
-        amhran.ie was a React website that showcased a new Irish song every day.
-        I learned a lot about the Irish music scene while running this project.
-        In hindsight I bit off way more than I could chew with this (finding a
-        new good Irish song every day is tough!), but it was cool to just come
-        up with an idea and launch it within a week. Learn more on my blog here.
+        amhran.ie was a React website that
+        <strong>showcased a new Irish song every day</strong>. I learned a lot
+        about the Irish music scene while running this project. In hindsight I
+        bit off way more than I could chew with this (finding a new good Irish
+        song every day is tough!), but it was cool to just come up with an idea
+        and launch it within a week. Learn more on my blog here.
       </li>
     </ul>
     <p class="pt-4">
@@ -126,10 +135,10 @@ eleventyNavigation:
   </div>
 </div>
 
-<!-- Blue music section -->
-<div class="bg-[#F6F1A1] p-4">
+<!-- Music section -->
+<div class="bg-[#F6C6A1] p-4">
   <div class="max-w-4xl mx-auto">
-    <h3 class="text-3xl font-bold text-center md:text-left pb-4">
+    <h3 class="text-3xl text-center md:text-left pb-4">
       This week I'm listening to...
     </h3>
 
@@ -158,10 +167,10 @@ eleventyNavigation:
   </div>
 </div>
 
-<!-- Pink socials section -->
-<div class="bg-[#A1F6C6] p-4 pb-8">
+<!-- Socials section -->
+<div class="bg-[#F6C6A1] p-4 pb-8">
   <div class="max-w-4xl mx-auto">
-    <h3 class="text-3xl font-bold text-center md:text-left pb-4">
+    <h3 class="text-3xl text-center md:text-left pb-4">
       I don’t post much publicly these days. But you can find me on:
     </h3>
     <ul class="px-4">
@@ -232,7 +241,10 @@ eleventyNavigation:
   </div>
 </div>
 
-<script src="https://unpkg.com/@popperjs/core@2" fetchpriority="low" defer></script>
+<script
+  src="https://unpkg.com/@popperjs/core@2"
+  fetchpriority="low"
+  defer></script>
 <script src="https://unpkg.com/tippy.js@6" fetchpriority="low" defer></script>
 <script>
   function initNameTooltip() {
