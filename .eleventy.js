@@ -9,6 +9,8 @@ const markdownItAnchor = require("markdown-it-anchor");
 const striptags = require("striptags");
 const fetch = require("node-fetch");
 
+let markdownExcerptRenderer;
+
 module.exports = function (eleventyConfig) {
   // Add plugins
   eleventyConfig.addPlugin(pluginRss);
@@ -89,6 +91,7 @@ module.exports = function (eleventyConfig) {
     slugify: eleventyConfig.getFilter("slug"),
   });
   eleventyConfig.setLibrary("md", markdownLibrary);
+  markdownExcerptRenderer = markdownLibrary;
 
   // Override Browsersync defaults (used only with --serve)
   eleventyConfig.setBrowserSyncConfig({
@@ -126,11 +129,14 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addNunjucksAsyncShortcode("twitter", async (url) => {
-    return await fetch(`https://publish.twitter.com/oembed?url=${url}`)
-      .then((res) => res.json())
-      .then((json) => {
-        return json.html;
-      });
+    try {
+      return await fetch(`https://publish.twitter.com/oembed?url=${url}`)
+        .then((res) => res.json())
+        .then((json) => json.html);
+    } catch (err) {
+      console.warn(`Twitter embed failed for ${url}: ${err.message}`);
+      return `<a href="${url}">${url}</a>`;
+    }
   });
 
   eleventyConfig.addFilter("permalinkDate", (dateObj) => {
@@ -187,17 +193,26 @@ module.exports = function (eleventyConfig) {
 };
 
 function extractExcerpt(article) {
-  if (!article.hasOwnProperty("templateContent")) {
-    console.warn(
-      'Failed to extract excerpt: Document has no property "templateContent".'
-    );
+  const frontMatterExcerpt = article?.data?.page?.excerpt;
+  if (frontMatterExcerpt) {
+    const renderer =
+      markdownExcerptRenderer ||
+      markdownIt({
+        html: true,
+        breaks: true,
+        linkify: true,
+      });
+    return renderer.render(frontMatterExcerpt.trim());
+  }
+
+  let content;
+  try {
+    content = article.templateContent;
+  } catch (err) {
     return null;
   }
 
-  let excerpt = null;
-  const content = article.templateContent;
-
-  excerpt = striptags(content)
+  return striptags(content)
     .trim()
     .split(" ")
     .splice(0, 50)
@@ -205,7 +220,6 @@ function extractExcerpt(article) {
     .replace(/^\s+|\s+$|\s+(?=\s)/g, "")
     .trim()
     .concat("...");
-  return excerpt;
 }
 
 async function imageShortcode({
