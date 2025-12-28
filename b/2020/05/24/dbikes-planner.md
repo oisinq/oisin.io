@@ -15,6 +15,8 @@ I've been really interested in the role tech can play in improving public transp
 
 It was a real rollercoaster of a project with many, _many_ failures (which I might put into its own post when I've a bit of perspective), but in the end I'm really happy with how everything ended up.
 
+<!--more-->
+
 ## My Final Year Project – dBikes Planner
 
 dBikes Planner is an Android journey planning app for cyclists using the Dublinbikes bike-sharing scheme. It allows users to generate cycling routes from their location to a destination. The back-end predicts availability of bikes at each station when generating a route.
