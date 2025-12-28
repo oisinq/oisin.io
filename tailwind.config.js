@@ -2,10 +2,7 @@ import defaultTheme from "tailwindcss/defaultTheme";
 import typography from "@tailwindcss/typography";
 
 export default {
-  content: [
-    "./**/*.{html,njk,md}",
-    "./_site/**/*.{html,njk}",
-  ],
+  content: ["./**/*.{html,njk,md}", "./_site/**/*.{html,njk}"],
   theme: {
     extend: {
       colors: {
