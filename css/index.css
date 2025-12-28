@@ -24,8 +24,17 @@
 @layer base {
   @font-face {
     font-family: Fredoka One;
-    src: url(../fonts/fredoka-variable.ttf) format("truetype-variations");
-    font-weight: 300 700;
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/fredoka-500.woff2) format("woff2");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: Fredoka One;
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/fredoka-700.woff2) format("woff2");
     font-display: swap;
   }
 
