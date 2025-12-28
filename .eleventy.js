@@ -8,7 +8,6 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const striptags = require("striptags");
 const fetch = require("node-fetch");
-const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
 
 let markdownExcerptRenderer;
 
@@ -17,7 +16,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
-  eleventyConfig.addPlugin(UpgradeHelper);
 
   // https://www.11ty.dev/docs/data-deep-merge/
   eleventyConfig.setDataDeepMerge(true);
