@@ -1,6 +1,6 @@
-module.exports = async function () {
-  const fetch = require("node-fetch");
+import fetch from "node-fetch";
 
+export default async function () {
   const lastfmApiKey = process.env.LASTFM_API_KEY;
 
   if (!lastfmApiKey) {
@@ -29,4 +29,4 @@ module.exports = async function () {
 
       return formattedAlbums;
     });
-};
+}

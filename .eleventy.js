@@ -1,17 +1,17 @@
-const { DateTime } = require("luxon");
-const fs = require("fs");
-const Image = require("@11ty/eleventy-img");
-const pluginNavigation = require("@11ty/eleventy-navigation");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const markdownIt = require("markdown-it");
-const markdownItAnchor = require("markdown-it-anchor");
-const striptags = require("striptags");
-const fetch = require("node-fetch");
+import { DateTime } from "luxon";
+import fs from "node:fs";
+import Image from "@11ty/eleventy-img";
+import pluginNavigation from "@11ty/eleventy-navigation";
+import pluginRss from "@11ty/eleventy-plugin-rss";
+import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import markdownIt from "markdown-it";
+import markdownItAnchor from "markdown-it-anchor";
+import striptags from "striptags";
+import fetch from "node-fetch";
 
 let markdownExcerptRenderer;
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
   // Add plugins
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
@@ -190,7 +190,7 @@ module.exports = function (eleventyConfig) {
       output: "_site",
     },
   };
-};
+}
 
 function extractExcerpt(article) {
   const frontMatterExcerpt = article?.data?.page?.excerpt;
